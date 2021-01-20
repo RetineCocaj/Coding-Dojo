@@ -1,2 +1,2 @@
-# Web-Fundamentals-Coding-Dojo
-WEB FUNDAMENTALS PART-TIME ONLINE CODING DOJO
+Coding Dojo
+C# Full-Stack Bootcamp
