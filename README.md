@@ -1,2 +1,1 @@
-Coding Dojo
-C# Full-Stack Bootcamp
+Coding Dojo/C# Full-Stack Bootcamp
