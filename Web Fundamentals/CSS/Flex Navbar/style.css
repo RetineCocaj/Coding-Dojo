@@ -1,6 +1,7 @@
 *{
     margin: 0px;
     padding: 0px;
+    font-family: 'Montserrat';font-size: 22px;
 }
 
 .center-box{
@@ -17,7 +18,7 @@
     background-color: wheat;
 }
 
-div{
+div:nth-child(2){
     background-color: cornflowerblue;
     color:white;
     display: flex;
@@ -25,27 +26,21 @@ div{
     align-items: center;
     flex-wrap: wrap;
     padding: 20px 120px;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif 
 }
 
-div h1{
+h1{
     font-size: 20px;
-    font-weight: normal;
 }
 
-div ul li{
+ul li{
     display: inline;
     list-style-type: none;
 }
 
-div ul li a{
+ul li a{
     text-decoration: none;
     color: white;
     font-size: 14px;
     display: inline-block;
     padding: 5px 80px;
-}
-
-h1, ul li, ul li a{
-
 }
