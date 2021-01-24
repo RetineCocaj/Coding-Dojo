@@ -1,0 +1,130 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+
+.container{
+    width: 1000px;
+    margin: auto;
+}
+
+header{
+    background: linear-gradient(#F1F1F1, #FEFEFE);
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 35px;
+}
+
+.main-content{
+    background: radial-gradient(#6F5964,#4E3A43, #1B0B0F);
+    padding: 25px;
+}
+
+.first-wrapper{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+#profile-pic{
+    width: 45%;
+    border: 5px solid #C0C0C0;
+    margin-right: 20px;
+}
+
+.bio-wrapper{
+    background: linear-gradient(to left, #DACBD9,#FFFFFF);
+}
+
+.bio-wrapper > *{
+    padding: 10px;
+    color:black;
+}
+
+.bio-wrapper h2{
+    background: linear-gradient(#AFAFB3,#878593, #AFAFB3);
+    color:white;
+}
+
+
+.box-wrapper{
+    margin-right: 25px;
+    padding-bottom: 25px;
+    background: linear-gradient(to left, #DACBD9,#FFFFFF);
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+}
+.box-wrapper:last-child{
+    margin-right: 0px;
+}
+
+.box-wrapper > *{
+    padding: 10px;
+}
+
+.box-wrapper img{
+    width: 100%;
+    padding: 0px;
+}
+
+
+.box-wrapper h2, .box-wrapper h3{
+    background: linear-gradient(#AFAFB3,#878593, #AFAFB3);
+    color:white;
+}
+
+.box-wrapper p{
+    margin-bottom: auto;
+}
+
+.technologies-wrapper{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+.technologies-wrapper img{
+    padding: 10px;
+    width: 36px;
+}
+
+.box-wrapper div{
+    display: flex;
+    justify-content: center;
+}
+.box-wrapper a{
+    text-decoration: none;
+    color:white;
+    background-color: #407D61;
+    border: 1px solid #1D4432;
+    border-radius: 8px;
+    box-shadow: 3px 2px 2px #8A8B8B;
+    padding: 5px;
+}
+
+footer{
+    background: linear-gradient(#F1F1F1, #FEFEFE);
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 0px 300px 10px;
+}
+
+footer p{
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+}
+
+footer img{
+    width: 20px;
+}
+
+footer a{
+    color: black;
+    font-style:italic;
+}
+
+
