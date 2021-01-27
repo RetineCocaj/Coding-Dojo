@@ -1,0 +1,163 @@
+body{
+    width: 800px;
+    margin: 0px auto;
+    font-family: sans-serif;
+}
+
+#top-header{
+    padding: 5px;
+}
+
+#top-header img{
+    width: 85px;
+    position: absolute;
+    top: 10px;
+}
+
+#top-header h1{
+    color: #474747;
+    display: inline-block;
+    margin-left: 85px;
+    margin-bottom: 0px;
+    font-size: 38px;
+}
+
+.blue{
+    color: #22659E;
+}
+
+h2{
+    padding: 10px 15px;
+    font-size: 24px;
+    color: white;
+    background: linear-gradient(#25669F, #5183AD, #25669F);
+}
+
+#content{
+    background: linear-gradient(#E4E4E4 , #FFFFFF, #FFFFFF,#FFFFFF,#FFFFFF);
+    display: flex;
+    justify-content: space-between;
+}
+
+#side-bar{
+    width: 24%;
+    padding: 20px 7px;
+}
+
+#side-bar h4{
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+#side-bar h4 span {
+    color: #D9241D;
+}
+
+#side-bar p{
+    font-weight: bold;
+    margin-bottom: 25px;
+    font-size: 13px;
+}
+
+#side-bar a{
+    display: block;
+    padding: 7px 15px;
+    text-align: center;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+    color:white;
+    font-weight: 500;
+    box-shadow: 2px 2px 2px gray;
+}
+
+#side-bar a:hover{
+    opacity: 0.8;
+}
+
+#side-bar a:nth-child(3){
+    background: linear-gradient(#6399C4, #24679F);
+}
+
+#side-bar a:nth-child(4){
+    background: linear-gradient(#EAAE57, #F07300);
+}
+
+hr{
+    width: 100%;
+    margin: 20px 0px;
+    padding: 0.5px;
+    background-color: #B8B8B8;
+}
+
+#ad-wrapper{
+    background-image: url('images/ad_background.png');
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    padding: 20px 5px;
+}
+#ad-wrapper h3{
+    text-align: center;
+    color: white;
+    font-size: 21px;
+}
+
+#ad-wrapper img{
+    width: 45%;
+    padding-bottom: 10px;
+}
+
+#side-bar #ad-wrapper a{
+    background: linear-gradient(#7CD1DF, #00C1DF,  #00C1DF);
+    padding: 5px 30px;
+    box-shadow: 1px 1px 1px black;
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#side-bar #ad-wrapper a span{
+    font-size: 5pt;
+    font-weight: 800;
+    vertical-align: middle;
+}
+#side-bar #ad-wrapper a span:nth-child(1){
+    color: #88DEEB;
+}
+#side-bar #ad-wrapper a span:nth-child(2){
+    color: #C2EEF6;
+}
+
+#main-content{
+    width: 65%;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+#main-header{
+    display: flex;
+    justify-content: space-between;
+}
+
+#main-header img{
+    width: 20px;
+    margin: 5px;
+    vertical-align: middle;
+    padding-bottom: 5px;
+}
+
+#main-header h3{
+    display: inline-block;
+    vertical-align: middle;
+    padding:0;
+}
+
+
+
+
+
+
+
