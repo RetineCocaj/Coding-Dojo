@@ -1,7 +1,7 @@
 var users = [{name: "Michael", age:37}, {name: "John", age:30}, {name: "David", age:27}];
 
 // print/log John's age
-console.log(users[1].age);
+console.log(users[users.map(obj => obj.name).indexOf("John")].age);
 
 // print/log the name of the first object
 console.log(users[0].name);
