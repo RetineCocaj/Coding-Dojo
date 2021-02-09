@@ -6,6 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
     <title>Ninja to Cat</title>
+
+    <script>
+        $(document).ready(function(){
+            $('img').click(function() {
+                var currentImage = $(this).attr('src');
+                var altImageSwitch = $(this).attr('data-alt-src');
+                $(this).attr('src', altImageSwitch);
+                $(this).attr('data-alt-src', currentImage);
+            });
+        })
+    </script>
 </head>
 <body>
     <img src='img/cat0.png' data-alt-src='img/ninja0.png' />
@@ -13,14 +24,5 @@
     <img src='img/ninja2.png' data-alt-src='img/cat2.png' />
     <img src='img/cat3.png' data-alt-src='img/ninja3.png' />
     <img src='img/ninja4.png' data-alt-src='img/cat4.png' />
-
-    <script>
-        $('img').click(function() {
-            var currentImage = $(this).attr('src');
-            var altImageSwitch = $(this).attr('data-alt-src');
-            $(this).attr('src', altImageSwitch);
-            $(this).attr('data-alt-src', currentImage);
-        });
-    </script>
 </body>
 </html>
