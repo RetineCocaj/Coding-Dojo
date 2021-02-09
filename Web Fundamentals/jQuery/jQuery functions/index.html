@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <title>My jQuery basic assignment!</title>
+</head>
+<body>
+    <div class="box">
+        <h1>AddClass, Before & After</h1>
+        <button id="add-class">AddClass</button>
+        <p class="add">Click the button to add class 'red' to this paragraph</p>
+    </div>
+    <hr>
+    <div class="box">
+        <h1>Slidetoggle</h1>
+        <button id="slide-toggle">Slidetoggle</button>
+        <p>Click the button to slidetoggle a hidden image</p>
+        <div class="hidden-img">
+            <img src="brain.jpg" alt="human-brain">
+        </div>
+    </div>
+    <hr>
+    <div class="box">
+        <h1>Append</h1>
+        <button id="append">Append</button>
+        <p>Click the button to append a new paragraph</p>
+        <div class="appended-p"></div>
+    </div>
+    <hr>
+    <div class="box">
+        <h1>Hide & Show</h1>
+        <button id="hide">Hide</button>
+        <button id="show">Show</button>
+        <p class="hide-show">Click the buttons to hide & show this paragraph</p>
+    </div>
+    <hr>
+    <div class="box">
+        <h1>Toggle</h1>
+        <button id="toggle">Toggle</button>
+        <p class="toggle">Toggle this paragraph</p>
+        <p class="toggle" style="display: none;">Paragraph toggled</p>
+    </div>
+    <hr>
+    <div class="box">
+        <h1>SlideDown & SlideUp</h1>
+        <h1>FadeIn & FadeOut</h1>
+        <button id="slide-down">SlideDown</button>
+        <button id="slide-up">SlideUp</button>
+        <button id="fade-in">FadeIn</button>
+        <button id="fade-out">FadeOut</button>
+        <p>slideUp, slideDown, fadeIn or fadeOut the paragraph</p>
+        <p class="slide-fade">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum culpa officia odio delectus, pariatur saepe aspernatur qui reprehenderit, beatae rem voluptatibus quae vitae, ullam eaque sint totam quis! Nisi delectus cum et labore! Ab ea fugiat, amet maxime culpa minima pariatur, veritatis esse iste quaerat possimus totam minus hic ratione quae, tenetur molestiae. Animi eius numquam error molestiae, nulla rem! Quae nisi atque veritatis maiores mollitia, cum accusantium numquam architecto soluta nobis quisquam, eligendi animi blanditiis saepe amet! Similique, dolores mollitia dolorem dolore quibusdam sapiente praesentium? Aliquid, ea delectus sequi eos dignissimos reprehenderit sed quas, voluptate vitae esse obcaecati. Pariatur.</p>
+    </div>
+    <hr>
+    <div class="box">
+        <h1>Html, Attr, Val & Text</h1>
+        <button class="email">@gmail.com</button>
+        <button class="email">@hotmail.com</button>
+        <button class="email">@live.com</button>
+        <button class="email">@outlook.com</button>
+        <input type="email" value="Click buttons to write your email address">
+        <p class="type"></p>
+        <p class="toggle" style="display: none;">Paragraph toggled</p>
+    </div>
+    <hr>
+
+    <script>
+        $('#add-class').click(function(){
+            $('.add').before('<p>This class will be added by method addClass (this paragraph is added by before method)</p>');
+            $('.add').addClass('red');
+            $('.add').after('<p>Class red added (this paragraph is added by after method)</p>');
+        })
+
+        $('#slide-toggle').click(function(){
+            $(this).toggleClass('.clicked');
+            $('.hidden-img img').slideToggle();
+        })
+
+        $('#append').click(function(){
+            $('.appended-p').append('<p>This is the appended paragraph!!!</p>');
+        })
+
+        $('#hide').on("click", function(){
+            $('.hide-show').hide();
+        })
+        $('#show').on("click", function(){
+            $('.hide-show').show();
+        })
+
+        $('#toggle').click(function(){
+            $('.toggle').toggle();
+        })
+
+        $('#slide-up').click(function(){
+            $('.slide-fade').slideUp();
+        })
+        $('#slide-down').click(function(){
+            $('.slide-fade').slideDown();
+        })
+        $('#fade-in').click(function(){
+            $('.slide-fade').fadeIn(3000);
+        })
+        $('#fade-out').click(function(){
+            $('.slide-fade').fadeOut(3000);
+        })
+
+        $('.email').click(function(){
+            var text = $(this).text();
+            $('input').val(text);
+            text = $('input').attr('type');
+            $('.type').html('The type of this input is ' + text)
+        })
+    </script>
+</body>
+</html>
