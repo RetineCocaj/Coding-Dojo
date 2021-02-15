@@ -7,9 +7,17 @@ namespace CollectionsPractice
     {
         static void Main(string[] args)
         {
-            int[] intArray = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
-            string[] names = {"Tim", "Martin", "Nikki", "Sara"};
-            bool[] boolArray = new bool[10]{true, true, false, false, true, false, true, false, false, true};
+            int[] intArray = new int[10];
+            for(var i = 0; i < intArray.Length; i++){
+                intArray[i] = i;
+            }
+
+            string[] names = new string[]{"Tim", "Martin", "Nikki", "Sara"};
+            bool[] boolArray = new bool[10];
+            for(int i = 0; i < boolArray.Length; i++){
+                if(i%2 == 0) boolArray[i] = true;
+                Console.WriteLine(boolArray[i]);
+            }
 
             List<string> flavors = new List<string>();
             flavors.Add("Strawberry");
