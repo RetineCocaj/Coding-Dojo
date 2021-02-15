@@ -1,5 +1,0 @@
-C:\Users\Asus\Desktop\Coding-Dojo\C# .NET Core\FirstCSharp\obj\Debug\net5.0\FirstCSharp.csprojAssemblyReference.cache
-C:\Users\Asus\Desktop\Coding-Dojo\C# .NET Core\FirstCSharp\obj\Debug\net5.0\FirstCSharp.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Asus\Desktop\Coding-Dojo\C# .NET Core\FirstCSharp\obj\Debug\net5.0\FirstCSharp.AssemblyInfoInputs.cache
-C:\Users\Asus\Desktop\Coding-Dojo\C# .NET Core\FirstCSharp\obj\Debug\net5.0\FirstCSharp.AssemblyInfo.cs
-C:\Users\Asus\Desktop\Coding-Dojo\C# .NET Core\FirstCSharp\obj\Debug\net5.0\FirstCSharp.csproj.CoreCompileInputs.cache
