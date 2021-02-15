@@ -1,0 +1,16 @@
+C:\Users\Asus\Desktop\Coding-Dojo\C# .NET Core\Basic13\bin\Debug\net5.0\Basic13.exe
+C:\Users\Asus\Desktop\Coding-Dojo\C# .NET Core\Basic13\bin\Debug\net5.0\Basic13.deps.json
+C:\Users\Asus\Desktop\Coding-Dojo\C# .NET Core\Basic13\bin\Debug\net5.0\Basic13.runtimeconfig.json
+C:\Users\Asus\Desktop\Coding-Dojo\C# .NET Core\Basic13\bin\Debug\net5.0\Basic13.runtimeconfig.dev.json
+C:\Users\Asus\Desktop\Coding-Dojo\C# .NET Core\Basic13\bin\Debug\net5.0\Basic13.dll
+C:\Users\Asus\Desktop\Coding-Dojo\C# .NET Core\Basic13\bin\Debug\net5.0\ref\Basic13.dll
+C:\Users\Asus\Desktop\Coding-Dojo\C# .NET Core\Basic13\bin\Debug\net5.0\Basic13.pdb
+C:\Users\Asus\Desktop\Coding-Dojo\C# .NET Core\Basic13\obj\Debug\net5.0\Basic13.csprojAssemblyReference.cache
+C:\Users\Asus\Desktop\Coding-Dojo\C# .NET Core\Basic13\obj\Debug\net5.0\Basic13.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Asus\Desktop\Coding-Dojo\C# .NET Core\Basic13\obj\Debug\net5.0\Basic13.AssemblyInfoInputs.cache
+C:\Users\Asus\Desktop\Coding-Dojo\C# .NET Core\Basic13\obj\Debug\net5.0\Basic13.AssemblyInfo.cs
+C:\Users\Asus\Desktop\Coding-Dojo\C# .NET Core\Basic13\obj\Debug\net5.0\Basic13.csproj.CoreCompileInputs.cache
+C:\Users\Asus\Desktop\Coding-Dojo\C# .NET Core\Basic13\obj\Debug\net5.0\Basic13.dll
+C:\Users\Asus\Desktop\Coding-Dojo\C# .NET Core\Basic13\obj\Debug\net5.0\ref\Basic13.dll
+C:\Users\Asus\Desktop\Coding-Dojo\C# .NET Core\Basic13\obj\Debug\net5.0\Basic13.pdb
+C:\Users\Asus\Desktop\Coding-Dojo\C# .NET Core\Basic13\obj\Debug\net5.0\Basic13.genruntimeconfig.cache
