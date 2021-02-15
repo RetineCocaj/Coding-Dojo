@@ -1,0 +1,16 @@
+C:\Users\Asus\Desktop\Coding-Dojo\C# .NET Core\Boxing-Unboxing\bin\Debug\net5.0\Boxing-Unboxing.exe
+C:\Users\Asus\Desktop\Coding-Dojo\C# .NET Core\Boxing-Unboxing\bin\Debug\net5.0\Boxing-Unboxing.deps.json
+C:\Users\Asus\Desktop\Coding-Dojo\C# .NET Core\Boxing-Unboxing\bin\Debug\net5.0\Boxing-Unboxing.runtimeconfig.json
+C:\Users\Asus\Desktop\Coding-Dojo\C# .NET Core\Boxing-Unboxing\bin\Debug\net5.0\Boxing-Unboxing.runtimeconfig.dev.json
+C:\Users\Asus\Desktop\Coding-Dojo\C# .NET Core\Boxing-Unboxing\bin\Debug\net5.0\Boxing-Unboxing.dll
+C:\Users\Asus\Desktop\Coding-Dojo\C# .NET Core\Boxing-Unboxing\bin\Debug\net5.0\ref\Boxing-Unboxing.dll
+C:\Users\Asus\Desktop\Coding-Dojo\C# .NET Core\Boxing-Unboxing\bin\Debug\net5.0\Boxing-Unboxing.pdb
+C:\Users\Asus\Desktop\Coding-Dojo\C# .NET Core\Boxing-Unboxing\obj\Debug\net5.0\Boxing-Unboxing.csprojAssemblyReference.cache
+C:\Users\Asus\Desktop\Coding-Dojo\C# .NET Core\Boxing-Unboxing\obj\Debug\net5.0\Boxing-Unboxing.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Asus\Desktop\Coding-Dojo\C# .NET Core\Boxing-Unboxing\obj\Debug\net5.0\Boxing-Unboxing.AssemblyInfoInputs.cache
+C:\Users\Asus\Desktop\Coding-Dojo\C# .NET Core\Boxing-Unboxing\obj\Debug\net5.0\Boxing-Unboxing.AssemblyInfo.cs
+C:\Users\Asus\Desktop\Coding-Dojo\C# .NET Core\Boxing-Unboxing\obj\Debug\net5.0\Boxing-Unboxing.csproj.CoreCompileInputs.cache
+C:\Users\Asus\Desktop\Coding-Dojo\C# .NET Core\Boxing-Unboxing\obj\Debug\net5.0\Boxing-Unboxing.dll
+C:\Users\Asus\Desktop\Coding-Dojo\C# .NET Core\Boxing-Unboxing\obj\Debug\net5.0\ref\Boxing-Unboxing.dll
+C:\Users\Asus\Desktop\Coding-Dojo\C# .NET Core\Boxing-Unboxing\obj\Debug\net5.0\Boxing-Unboxing.pdb
+C:\Users\Asus\Desktop\Coding-Dojo\C# .NET Core\Boxing-Unboxing\obj\Debug\net5.0\Boxing-Unboxing.genruntimeconfig.cache
