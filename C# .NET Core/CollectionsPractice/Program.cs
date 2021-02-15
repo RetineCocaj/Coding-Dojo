@@ -8,7 +8,7 @@ namespace CollectionsPractice
         static void Main(string[] args)
         {
             int[] intArray = new int[10];
-            for(var i = 0; i < intArray.Length; i++){
+            for(int i = 0; i < intArray.Length; i++){
                 intArray[i] = i;
             }
 
