@@ -1,32 +1,32 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Asus\\Desktop\\Coding-Dojo\\C# .NET Core\\Fundamentals-I\\Fundamentals-I.csproj": {}
+    "C:\\Users\\Asus\\Desktop\\Coding-Dojo\\C# .NET Core\\Language Fundamentals\\Fundamentals-I\\Fundamentals-I.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Asus\\Desktop\\Coding-Dojo\\C# .NET Core\\Fundamentals-I\\Fundamentals-I.csproj": {
+    "C:\\Users\\Asus\\Desktop\\Coding-Dojo\\C# .NET Core\\Language Fundamentals\\Fundamentals-I\\Fundamentals-I.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Asus\\Desktop\\Coding-Dojo\\C# .NET Core\\Fundamentals-I\\Fundamentals-I.csproj",
+        "projectUniqueName": "C:\\Users\\Asus\\Desktop\\Coding-Dojo\\C# .NET Core\\Language Fundamentals\\Fundamentals-I\\Fundamentals-I.csproj",
         "projectName": "Fundamentals-I",
-        "projectPath": "C:\\Users\\Asus\\Desktop\\Coding-Dojo\\C# .NET Core\\Fundamentals-I\\Fundamentals-I.csproj",
+        "projectPath": "C:\\Users\\Asus\\Desktop\\Coding-Dojo\\C# .NET Core\\Language Fundamentals\\Fundamentals-I\\Fundamentals-I.csproj",
         "packagesPath": "C:\\Users\\Asus\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Asus\\Desktop\\Coding-Dojo\\C# .NET Core\\Fundamentals-I\\obj\\",
+        "outputPath": "C:\\Users\\Asus\\Desktop\\Coding-Dojo\\C# .NET Core\\Language Fundamentals\\Fundamentals-I\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Asus\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net5.0"
+          "netcoreapp3.1"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net5.0": {
-            "targetAlias": "net5.0",
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
             "projectReferences": {}
           }
         },
@@ -37,8 +37,8 @@
         }
       },
       "frameworks": {
-        "net5.0": {
-          "targetAlias": "net5.0",
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "imports": [
             "net461",
             "net462",
