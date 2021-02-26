@@ -1,0 +1,25 @@
+﻿using System;
+
+namespace Phone
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Galaxy s8 = new Galaxy("s8", 100, "T-Mobile", "Doo do doo dooo");
+            Nokia elevenHundred = new Nokia("1100", 60, "Metro PCS", "Ringgg ring ringgg");
+
+            s8.DisplayInfo();
+            Console.WriteLine("");
+            Console.WriteLine($"... {s8.Ring()} ...");
+            Console.WriteLine($"Galacy {s8.VersionNumber} {s8.Unlock()}");
+            Console.WriteLine("");
+
+            elevenHundred.DisplayInfo();
+            Console.WriteLine("");
+            Console.WriteLine($"... {elevenHundred.Ring()} ...");
+            Console.WriteLine($"Nokia {elevenHundred.VersionNumber} {elevenHundred.Unlock()}");
+            Console.WriteLine("");
+        }
+    }
+}
