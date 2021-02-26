@@ -16,7 +16,6 @@ namespace CollectionsPractice
             bool[] boolArray = new bool[10];
             for(int i = 0; i < boolArray.Length; i++){
                 if(i%2 == 0) boolArray[i] = true;
-                Console.WriteLine(boolArray[i]);
             }
 
             List<string> flavors = new List<string>();
