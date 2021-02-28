@@ -1,0 +1,29 @@
+
+form{
+    width: 300px;
+    margin: 20px auto;
+    border: 2px solid black;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+form div{
+    display: flex;
+    justify-content: space-between;
+}
+form > * {
+    margin-bottom: 10px;
+}
+
+select{
+    width: 150px;
+    height: 25px;
+}
+
+button{
+    padding: 5px 10px;
+    align-self: flex-end;
+    color: white;
+    background-color:rgb(35, 115, 161);
+}

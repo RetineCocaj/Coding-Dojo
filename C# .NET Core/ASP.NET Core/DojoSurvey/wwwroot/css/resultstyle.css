@@ -1,0 +1,35 @@
+h1{
+    text-decoration: underline;
+}
+.container{
+    width: 300px;
+    margin: 20px auto;
+    border: 2px solid black;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.container div{
+    margin-top: -25px;
+    display: flex;
+    justify-content: space-between;
+    height: fit-content;
+}
+
+button{
+    margin-top: 50px;
+    padding: 5px 10px;
+    align-self: flex-end;
+    background-color:rgb(35, 115, 161);
+
+}
+
+button a{
+    text-decoration: none;
+    color: white;
+}
+
+button:hover{
+    opacity: 0.8;
+}
