@@ -16,3 +16,14 @@ C:\Users\Asus\Desktop\Coding-Dojo\C# .NET Core\ASP.NET Core\Portfolio-I\obj\Debu
 C:\Users\Asus\Desktop\Coding-Dojo\C# .NET Core\ASP.NET Core\Portfolio-I\obj\Debug\netcoreapp3.1\staticwebassets\Portfolio-I.StaticWebAssets.xml
 C:\Users\Asus\Desktop\Coding-Dojo\C# .NET Core\ASP.NET Core\Portfolio-I\obj\Debug\netcoreapp3.1\Portfolio-I.dll
 C:\Users\Asus\Desktop\Coding-Dojo\C# .NET Core\ASP.NET Core\Portfolio-I\obj\Debug\netcoreapp3.1\Portfolio-I.pdb
+C:\Users\Asus\Desktop\Coding-Dojo\C# .NET Core\ASP.NET Core\Portfolio-I\obj\Debug\netcoreapp3.1\Portfolio-I.RazorAssemblyInfo.cache
+C:\Users\Asus\Desktop\Coding-Dojo\C# .NET Core\ASP.NET Core\Portfolio-I\obj\Debug\netcoreapp3.1\Portfolio-I.RazorAssemblyInfo.cs
+C:\Users\Asus\Desktop\Coding-Dojo\C# .NET Core\ASP.NET Core\Portfolio-I\bin\Debug\netcoreapp3.1\Portfolio-I.Views.dll
+C:\Users\Asus\Desktop\Coding-Dojo\C# .NET Core\ASP.NET Core\Portfolio-I\bin\Debug\netcoreapp3.1\Portfolio-I.Views.pdb
+C:\Users\Asus\Desktop\Coding-Dojo\C# .NET Core\ASP.NET Core\Portfolio-I\obj\Debug\netcoreapp3.1\Portfolio-I.TagHelpers.input.cache
+C:\Users\Asus\Desktop\Coding-Dojo\C# .NET Core\ASP.NET Core\Portfolio-I\obj\Debug\netcoreapp3.1\Portfolio-I.TagHelpers.output.cache
+C:\Users\Asus\Desktop\Coding-Dojo\C# .NET Core\ASP.NET Core\Portfolio-I\obj\Debug\netcoreapp3.1\Portfolio-I.RazorCoreGenerate.cache
+C:\Users\Asus\Desktop\Coding-Dojo\C# .NET Core\ASP.NET Core\Portfolio-I\obj\Debug\netcoreapp3.1\Razor\Views\First\Index.cshtml.g.cs
+C:\Users\Asus\Desktop\Coding-Dojo\C# .NET Core\ASP.NET Core\Portfolio-I\obj\Debug\netcoreapp3.1\Portfolio-I.RazorTargetAssemblyInfo.cs
+C:\Users\Asus\Desktop\Coding-Dojo\C# .NET Core\ASP.NET Core\Portfolio-I\obj\Debug\netcoreapp3.1\Portfolio-I.Views.pdb
+C:\Users\Asus\Desktop\Coding-Dojo\C# .NET Core\ASP.NET Core\Portfolio-I\obj\Debug\netcoreapp3.1\Portfolio-I.csproj.CopyComplete
