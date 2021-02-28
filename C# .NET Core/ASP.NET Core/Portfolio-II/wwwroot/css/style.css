@@ -1,0 +1,17 @@
+body{
+    width: 900px;
+    margin: 0 auto;
+}
+
+nav ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 30%;
+    font-size: 20px;
+}
+
+h1{
+    margin: 50px 0;
+    text-align: center;
+}

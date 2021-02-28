@@ -1,0 +1,11 @@
+.projects-content{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px auto;
+    width: 70%;
+    height: 400px;
+    overflow: scroll;
+}
+.projects-content > *{
+    margin: 10px auto;
+}

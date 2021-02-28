@@ -1,0 +1,23 @@
+.main-content{
+    margin: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.main-content p{
+    width: 30%;
+}
+
+
+.left-side{
+    display: flex;
+    width: 30%;
+    margin-left: 30px;
+    flex-direction: column;
+    text-align: center;
+}
+
+.left-side p, .left-side img{
+    align-self: center;
+}
