@@ -1,0 +1,46 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<form class="form-horizontal border border-dark col-sm-6" action="/result" method="POST">
+    <div class="form-group">
+        <label class="control-label col-sm-6">Your Name:</label>
+        <div class="col-sm-12">
+        <input type="text" class="form-control" name="Name">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-sm-6">Dojo Location:</label>
+        <div class="col-sm-12">
+            <select class="form-control" name="Location">
+                <option value="LA">LA</option>
+                <option value="New York">New York</option>
+                <option value="Michigan">Michigan</option>
+                <option value="Silicon Valley">Silicon Valley</option>
+                <option value="Toronto">Toronto</option>
+            </select>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-sm-6">Dojo Location:</label>
+        <div class="col-sm-12">
+            <select class="form-control" name="Language">
+                <option value="CSharp">C#</option>
+                <option value="Java">JAVA</option>
+                <option value="Python">Python</option>
+                <option value="JavaScript">JavaScript</option>
+        </select>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-sm-6">Comment (optional):</label>
+        <div class="col-sm-12">
+            <textarea class="form-control" name="Comment"></textarea>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-sm-offset-6 col-sm-12">
+        <button type="submit" class="btn btn-default bg-info text-white">Send</button>
+        </div>
+    </div>
+</form>
