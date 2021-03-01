@@ -1,0 +1,8 @@
+@model int[]
+<h3>Here are some numbers!</h3>
+<div class="border border-dark w-25 px-3 py-2">
+    @foreach(var num in Model)
+    {
+        <p>@num</p>
+    }
+</div>

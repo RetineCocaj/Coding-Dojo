@@ -1,0 +1,9 @@
+@using ViewModelsFun.Models
+@model List<User>
+<h3>Here are some users!</h3>
+<div class="border border-dark w-25 px-3 py-2">
+    @foreach(var user in Model)
+    {
+        <p>@user.FirstName @user.LastName</p>
+    }
+</div>
