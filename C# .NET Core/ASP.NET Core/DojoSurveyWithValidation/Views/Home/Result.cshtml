@@ -1,0 +1,14 @@
+@model Survey
+ <div class="result border border-dark col-sm-6 p-3">
+    <h3>Submitted Info</h3>
+    <p><strong>Name: </strong>@Model.Name</p>
+    <p><strong>Location: </strong>@Model.Location</p>
+    <p><strong>Language: </strong>@Model.Language</p>
+    @if(Model.Comment != null)
+    {
+        <p><strong>Comment: </strong>@Model.Comment</p>
+    }
+    <form action="/">
+        <button class="btn btn-default bg-info text-white">Go back</button>
+    </form>
+</div>

@@ -1,0 +1,52 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+@model Survey
+<form asp-action="StoreSurvey" asp-controller="Home" class="form-horizontal border border-dark col-sm-6" method="POST">
+    <div class="form-group">
+        <label asp-for="Name" class="control-label col-sm-6"></label>
+        <div class="col-sm-12">
+            <input asp-for="Name" class="form-control">
+        </div>
+        <span asp-validation-for="Name" class="display-6 text-danger ml-3"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Location" class="control-label col-sm-6"></label>
+        <div class="col-sm-12">
+            <select class="form-control" asp-for="Location">
+                <option value="">--Select--</option>
+                <option value="LA">LA</option>
+                <option value="New York">New York</option>
+                <option value="Michigan">Michigan</option>
+                <option value="Silicon Valley">Silicon Valley</option>
+                <option value="Toronto">Toronto</option>
+            </select>
+        </div>
+        <span asp-validation-for="Location" class="display-6 text-danger ml-3"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Language" class="control-label col-sm-6"></label>
+        <div class="col-sm-12">
+            <select class="form-control" asp-for="Language">
+                <option value="">--Select--</option>
+                <option value="CSharp">C#</option>
+                <option value="Java">JAVA</option>
+                <option value="Python">Python</option>
+                <option value="JavaScript">JavaScript</option>
+            </select>
+        </div>
+        <span asp-validation-for="Location" class="display-6 text-danger ml-3"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Comment" class="control-label col-sm-6"></label>
+        <div class="col-sm-12">
+            <textarea asp-for="Comment" class="form-control"></textarea>
+        </div>
+        <span asp-validation-for="Comment" class="display-6 text-danger ml-3"></span>
+    </div>
+    <div class="form-group">
+        <div class="col-sm-offset-6 col-sm-12">
+        <button type="submit" class="btn btn-default bg-info text-white">Send</button>
+        </div>
+    </div>
+</form>

@@ -6,12 +6,12 @@ namespace FormSubmission.Models
     {
         [Display(Name="First Name")]
         [Required]
-        [MinLength(4, ErrorMessage="Field must be 3 characters or more")]
+        [MinLength(3, ErrorMessage="Field must be 3 characters or more")]
         public string FirstName{ get; set; }
 
         [Display(Name="Last Name")]
         [Required]
-        [MinLength(4, ErrorMessage="Field must be 3 characters or more")]
+        [MinLength(3, ErrorMessage="Field must be 3 characters or more")]
         public string LastName{ get; set; }
 
         [Display(Name="Age")]
