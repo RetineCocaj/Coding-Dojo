@@ -1,0 +1,41 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+@{
+    string message = (string)TempData["message"];
+    string[] gameTypes = new string[] { "Feed", "Play", "Work", "Sleep" };
+    bool restart = false;
+    if(Model.IsALoss)
+    {
+        message = "You Dojodachi has passed away";
+        restart = true;
+    }
+    else if(Model.IsAWin)
+    {
+        message = "Congradulations, You Won!";
+        restart = true;
+    }
+}
+@model Dachi
+
+<h5 class="text-center mb-2">Fullness: @Model.Fullness | Happiness: @Model.Happiness | Meals: @Model.Meals | Energy: @Model.Energy</h5>
+<div class="game p-2 w-50 offset-3 text-center border border-dark">
+    <img class="mb-2" src="~/images/x.png">
+    <p>@message</p>
+</div>
+<div class="text-center mt-2">
+@{
+    if(!restart)
+    {
+        foreach(string gT in gameTypes)
+        {
+            <a asp-action="Play" asp-controller="Home" asp-route-gameType="@gT.ToLower()"><button>@gT</button></a>
+        }
+    }
+    else
+    {
+        <a asp-action="Restart" asp-controller="Home">Restart?</a>
+    }
+}
+</div>
