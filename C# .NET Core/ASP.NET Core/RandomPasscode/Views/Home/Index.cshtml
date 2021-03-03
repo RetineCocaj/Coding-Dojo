@@ -1,0 +1,11 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h5>Random passcode (passcode #@ViewBag.Times)</h5>
+    <br>
+    <h2 class="p-2 border border-dark w-50 offset-3 text-center">@ViewBag.Passcode</h2>
+    <br>
+    <button onclick="window.location.href='/new';" class="p-2 btn btn-outline-dark">Generate</button>
+</div>
