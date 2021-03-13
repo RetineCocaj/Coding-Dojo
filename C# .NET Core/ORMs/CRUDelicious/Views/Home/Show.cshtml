@@ -1,0 +1,14 @@
+@model Dishes
+<a asp-controller="Home" asp-action="Index">Home</a>
+<div class="text-center">
+    <h1>@Model.Name</h1>
+    <h3>@Model.Chef</h3>
+</div>
+<hr>
+<p>@Model.Description</p>
+<h5><strong>Calories: </strong>@Model.Calories</h5>
+<h5><strong>Tastiness: </strong>@Model.Tastiness</h5>
+<div class="col-12 offset-5">
+    <a asp-action="Delete" asp-route-id="@Model.DishId"><button>Delete</button></a>
+    <a asp-action="Edit" asp-route-id="@Model.DishId"><button>Edit</button></a>
+</div>

@@ -1,0 +1,51 @@
+@model Dishes
+<a asp-controller="Home" asp-action="Index">Home</a>
+<h1 class="text-center">Add a new Dish!</h1>
+
+<form class="d-flex col-8 offset-2 justify-content-between mt-5" method="post" asp-action="Create" asp-controller="Home">
+    <div>
+        <div class="form-group d-flex justify-content-between">
+            <span asp-validation-for="Chef"></span>
+            <label asp-for="Chef" class="mr-2"></label>
+            <input asp-for="Chef">
+        </div>
+        <div class="form-group d-flex justify-content-between">
+            <span asp-validation-for="Name"></span>
+            <label asp-for="Name" class="mr-2"></label>
+            <input asp-for="Name">
+        </div>
+        <div class="form-group d-flex justify-content-between">
+            <span asp-validation-for="Calories"></span>
+            <label asp-for="Calories" class="mr-2"></label>
+            <input asp-for="Calories">
+        </div>
+    </div>
+    <div>
+        <div class="form-group">
+            <span asp-validation-for="Tastiness"></span>
+            <label asp-for="Tastiness" class="d-block"></label>
+            <select asp-for="Tastiness" class="ml-2 px-2">
+                @for (var tasty = 1; tasty <= 10; tasty++)
+                {
+                    if (tasty == 10)
+                    {
+                        <option selected value="@tasty">@tasty</option>
+                    }
+                    else
+                    {
+                        <option value="@tasty">@tasty</option>
+                    }
+                }
+            </select>
+        </div>
+    </div>
+    <div>
+        <div class="form-group">
+            <span asp-validation-for="Description"></span>
+            <label asp-for="Description" class="d-block"></label>
+            <textarea asp-for="Description"></textarea>
+        </div>
+        <button>Add Dish</button>
+    </div>
+
+</form>

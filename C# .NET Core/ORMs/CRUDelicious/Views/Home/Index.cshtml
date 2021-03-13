@@ -1,0 +1,17 @@
+﻿@model IEnumerable<Dishes>
+
+<div class="col-8">
+    <h1>Welcome to CRUDelicious!</h1>
+
+    <div class="d-flex justify-content-between mt-5">
+        <div>
+            <h5>Check out some recent dishes:</h5>
+            <hr>
+        </div>
+        <a asp-controller="Home" asp-action="New">Add a new Dish</a>
+    </div>
+    @foreach(var dish in Model)
+    {
+        <p><a asp-controller="Home" asp-action="Show" asp-route-dishId="@dish.DishId">@dish.Name</a> by @dish.Chef</p>
+    }
+</div>
