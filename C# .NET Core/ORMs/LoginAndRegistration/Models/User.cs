@@ -1,3 +1,4 @@
+using System;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
@@ -27,6 +28,8 @@ namespace LoginAndRegistration
         [DataType(DataType.Password)]
         [NotMapped]
         public string ConfirmPassword {get;set;}
+        public DateTime CreatedAt { get; set; } = DateTime.Now;
+        public DateTime UpdatedAt { get; set; } = DateTime.Now;
     }
 
     public class LoginUser
