@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "cLeJ715swVziMr243VCeGgY3SWDNhx+SbksKeT+1eiZ2z4mS7+Rx7Yvg2GJCH2fiCvf/TTojefLS1aIXrq4mlw==",
+  "dgSpecHash": "/440i1AqOHnuQOsCh9/TKygtCnU1oc3VpLyiJ7meZ6ePdNVyB1b//xO0mRV7wBpDY6GTSLWuWTwh0yAYFR3CIA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Asus\\Desktop\\Coding-Dojo\\C# .NET Core\\ORMs\\SportsORM\\SportsORM.csproj",
   "expectedPackageFiles": [
@@ -117,8 +117,7 @@
     "C:\\Users\\Asus\\.nuget\\packages\\system.threading.tasks.extensions\\4.3.0\\system.threading.tasks.extensions.4.3.0.nupkg.sha512",
     "C:\\Users\\Asus\\.nuget\\packages\\system.threading.timer\\4.3.0\\system.threading.timer.4.3.0.nupkg.sha512",
     "C:\\Users\\Asus\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
-    "C:\\Users\\Asus\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
-    "C:\\Users\\Asus\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.12\\microsoft.netcore.app.host.win-x64.3.1.12.nupkg.sha512"
+    "C:\\Users\\Asus\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512"
   ],
   "logs": []
 }
