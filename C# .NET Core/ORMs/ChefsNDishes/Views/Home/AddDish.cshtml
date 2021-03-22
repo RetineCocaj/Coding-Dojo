@@ -1,0 +1,59 @@
+@model Dish
+<a asp-controller="Home" asp-action="Dishes">Home</a>
+<h1 class="text-center">Add a new Dish!</h1>
+
+<form class="d-flex col-8 offset-2 justify-content-between mt-5" method="post" asp-action="DishAdded" asp-controller="Home">
+    <div>
+        <div class="form-group justify-content-between">
+            <span asp-validation-for="Name"></span>
+            <label asp-for="Name" class="mr-2"></label>
+            <br>
+            <input asp-for="Name">
+        </div>
+        <div class="form-group justify-content-between">
+            <span asp-validation-for="Calories"></span>
+            <label asp-for="Calories" class="mr-2"></label>
+            <br>
+            <input asp-for="Calories">
+        </div>
+        <div class="form-group">
+            <span asp-validation-for="Description"></span>
+            <label asp-for="Description" class="d-block"></label>
+            <textarea asp-for="Description"></textarea>
+        </div>
+    </div>
+    <div>
+        <div class="form-group justify-content-between">
+            <span asp-validation-for="Chef"></span>
+            <label asp-for="Chef" class="mr-2"></label>
+            <br>
+            <select asp-for="ChefId">
+                @foreach (var chef in @ViewBag.Chefs)
+                {
+                    <option value="@chef.ChefId">@chef.FirstName @chef.LastName</option>
+                }
+            </select>
+        </div>
+    </div>
+    <div>
+        <div class="form-group">
+            <span asp-validation-for="Tastiness"></span>
+            <label asp-for="Tastiness" class="d-block"></label>
+            <select asp-for="Tastiness" class="ml-2 px-2">
+                @for (var tasty = 1; tasty <= 5; tasty++)
+                {
+                    if (tasty == 5)
+                    {
+                        <option selected value="@tasty">@tasty</option>
+                    }
+                    else
+                    {
+                        <option value="@tasty">@tasty</option>
+                    }
+                }
+            </select>
+        </div>
+        <button>Add Dish</button>
+    </div>
+
+</form>

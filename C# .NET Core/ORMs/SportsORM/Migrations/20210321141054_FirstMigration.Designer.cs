@@ -9,7 +9,7 @@ using SportsORM.Models;
 namespace SportsORM.Migrations
 {
     [DbContext(typeof(Context))]
-    [Migration("20210321122524_FirstMigration")]
+    [Migration("20210321141054_FirstMigration")]
     partial class FirstMigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

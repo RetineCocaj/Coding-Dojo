@@ -1,0 +1,32 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="d-flex justify-content-between mb-4">
+    <div class="d-flex text-center mx-auto">
+        <h1>Chefs |</h1>
+        <h1><a href="dishes"> Dishes</a></h1>
+    </div>
+    <a href="new" class="align-self-center">Add a Chef</a>
+</div>
+<div>
+    <h2>Check out our roaster of Chefs!</h2>
+    <hr>
+    <table class="table table-striped">
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th># of Dishes</th>
+        </tr>
+        @foreach (var ch in ViewBag.Chefs)
+        {
+            var age = DateTime.Now.Year - ch.DateOfBirth.Year;
+            if (ch.DateOfBirth.Date > DateTime.Now.AddYears(-age)) age--;
+            <tr>
+                <td>@ch.FirstName @ch.LastName</td>
+                <td>@age</td>
+                <td>@ch.Dishes.Count</td>
+            </tr>
+        }
+    </table>
+</div>
