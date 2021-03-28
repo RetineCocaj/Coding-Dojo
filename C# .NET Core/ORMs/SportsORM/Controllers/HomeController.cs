@@ -145,6 +145,65 @@ namespace SportsORM.Controllers
         [HttpGet("level_3")]
         public IActionResult Level3()
         {
+            ViewBag.TeamsThatSamuelPlayed = _context.PlayerTeams
+                .Include(pt => pt.TeamOfPlayer)
+                .Where(p => p.PlayerOnTeam.FirstName.Equals("Samuel") && p.PlayerOnTeam.LastName.Equals("Evans"))
+                .ToList();
+
+            ViewBag.PlayersManitobaTigerCats = _context.Teams
+                .Include(t => t.AllPlayers)
+                    .ThenInclude(t => t.PlayerOnTeam)
+                .Include(l => l.CurrentPlayers)
+                .Where(t => t.Location == "Manitoba" && t.TeamName == "Tiger-Cats")
+                .ToList();
+    
+            ViewBag.PlayersWereWichitaVikings = _context.Teams
+                .Include(t => t.AllPlayers)
+                    .ThenInclude(t => t.PlayerOnTeam)
+                .Where(t => t.Location == "Wichita" && t.TeamName == "Vikings")
+                .ToList();
+
+            ViewBag.JacobGrayTeamsPlayedBeforeOregonColts = _context.Players
+                .Include(p => p.AllTeams)
+                    .ThenInclude(p => p.TeamOfPlayer)
+                .Where(p => p.FirstName == "Jacob" && p.LastName == "Gray" && p.CurrentTeam.Location == "Oregon" && p.CurrentTeam.TeamName == "Colts")
+                .ToList();
+
+            ViewBag.AllJoshuasThatPlayedAtlanticFederation = _context.Players
+                .Include(p => p.CurrentTeam)
+                    .ThenInclude(t => t.CurrLeague)
+                .Include(p => p.AllTeams)
+                    .ThenInclude(p => p.TeamOfPlayer.CurrLeague)
+                .Where(p => p.FirstName == "Joshua" && p.CurrentTeam.CurrLeague.Name == "Atlantic Federation of Amateur Baseball")
+                .ToList();
+
+            var listOfTeams = _context.Teams
+                .Include(t => t.AllPlayers)
+                    .ThenInclude(t => t.PlayerOnTeam)
+                .Include(l => l.CurrentPlayers)
+                .ToList();
+
+            List<KeyValuePair<int, string>> countsTeams = new List<KeyValuePair<int, string>>();
+            int index = 0;
+            foreach(var l in listOfTeams){
+                if(l.AllPlayers.Count() + l.CurrentPlayers.Count() > 12)
+                    countsTeams.Insert(index++, new KeyValuePair<int, string>(l.AllPlayers.Count() + l.CurrentPlayers.Count(), l.TeamName));
+            }
+            ViewBag.AllTeamsMoreThan12PlayersPastPresent = countsTeams;
+
+
+            var listOfPlayers = _context.Players
+                .Include(p => p.AllTeams)
+                .ToList();
+            
+            List<KeyValuePair<int, string>> countsNrTeamsForPlayer = new List<KeyValuePair<int, string>>();
+            index = 0;
+            foreach(var l in listOfPlayers){
+                countsNrTeamsForPlayer.Insert(index++, new KeyValuePair<int, string>(l.AllTeams.Count(), l.FirstName +" "+ l.LastName));
+            }
+
+            ViewBag.AllPlayersSortedByNrOfTeamsTheyPlayed = countsNrTeamsForPlayer;
+            
             return View();
         }
 
