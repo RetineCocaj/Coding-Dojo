@@ -1,0 +1,31 @@
+@model Category
+
+<h1 class="text-center">@Model.Name</h1>
+
+<div class="d-flex justify-content-between align-content-end">
+    <div>
+        <h2>Products:</h2>
+        <ul>
+            @foreach (var item in Model.Associations)
+            {   
+                <li>@item.Product.Name</li>  
+            }
+        </ul>
+    </div>
+    <div>
+        <h3>Add Product:</h3>
+        <form asp-action="AddCategory" class="mt-5" asp-route-isProduct="true" asp-controller="Association" method="post">
+            <div class="form-group justify-content-between">
+                <input type="hidden" name="CategoryId" value="@Model.CategoryId">
+                <select name="ProductId" class="w-100">
+                    @foreach (var p in ViewBag.products)
+                    {
+                        <option value="@p.ProductId">@p.Name</option>
+                    }
+                </select>
+            </div>
+
+            <button>Add</button>
+        </form>
+    </div>
+</div>
