@@ -173,8 +173,9 @@ namespace SportsORM.Controllers
                 .Include(p => p.CurrentTeam)
                     .ThenInclude(t => t.CurrLeague)
                 .Include(p => p.AllTeams)
-                    .ThenInclude(p => p.TeamOfPlayer.CurrLeague)
-                .Where(p => p.FirstName == "Joshua" && p.CurrentTeam.CurrLeague.Name == "Atlantic Federation of Amateur Baseball")
+                .Where(p => p.FirstName == "Joshua" && p.CurrentTeam.CurrLeague.Name == "Atlantic Federation of Amateur Baseball" 
+                    && p.AllTeams.All(t => t.PlayerOnTeam.FirstName == "Joshua")
+                    && p.AllTeams.All(t => t.TeamOfPlayer.CurrLeague.Name == "Atlantic Federation of Amateur Baseball"))
                 .ToList();
 
             var listOfTeams = _context.Teams
