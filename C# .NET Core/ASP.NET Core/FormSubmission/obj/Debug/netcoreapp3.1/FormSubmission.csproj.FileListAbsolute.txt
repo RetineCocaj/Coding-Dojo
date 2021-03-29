@@ -1,6 +1,5 @@
 C:\Users\Asus\Desktop\Coding-Dojo\C# .NET Core\ASP.NET Core\FormSubmission\bin\Debug\netcoreapp3.1\appsettings.Development.json
 C:\Users\Asus\Desktop\Coding-Dojo\C# .NET Core\ASP.NET Core\FormSubmission\bin\Debug\netcoreapp3.1\appsettings.json
-C:\Users\Asus\Desktop\Coding-Dojo\C# .NET Core\ASP.NET Core\FormSubmission\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
 C:\Users\Asus\Desktop\Coding-Dojo\C# .NET Core\ASP.NET Core\FormSubmission\bin\Debug\netcoreapp3.1\FormSubmission.exe
 C:\Users\Asus\Desktop\Coding-Dojo\C# .NET Core\ASP.NET Core\FormSubmission\bin\Debug\netcoreapp3.1\FormSubmission.deps.json
 C:\Users\Asus\Desktop\Coding-Dojo\C# .NET Core\ASP.NET Core\FormSubmission\bin\Debug\netcoreapp3.1\FormSubmission.runtimeconfig.json
@@ -33,3 +32,6 @@ C:\Users\Asus\Desktop\Coding-Dojo\C# .NET Core\ASP.NET Core\FormSubmission\obj\D
 C:\Users\Asus\Desktop\Coding-Dojo\C# .NET Core\ASP.NET Core\FormSubmission\obj\Debug\netcoreapp3.1\FormSubmission.pdb
 C:\Users\Asus\Desktop\Coding-Dojo\C# .NET Core\ASP.NET Core\FormSubmission\obj\Debug\netcoreapp3.1\FormSubmission.csproj.CopyComplete
 C:\Users\Asus\Desktop\Coding-Dojo\C# .NET Core\ASP.NET Core\FormSubmission\obj\Debug\netcoreapp3.1\Razor\Views\Home\Success.cshtml.g.cs
+C:\Users\Asus\Desktop\Coding-Dojo\C# .NET Core\ASP.NET Core\FormSubmission\obj\Debug\netcoreapp3.1\FormSubmission.csproj.CoreCompileInputs.cache
+C:\Users\Asus\Desktop\Coding-Dojo\C# .NET Core\ASP.NET Core\FormSubmission\obj\Debug\netcoreapp3.1\scopedcss\bundle\FormSubmission.styles.css
+C:\Users\Asus\Desktop\Coding-Dojo\C# .NET Core\ASP.NET Core\FormSubmission\obj\Debug\netcoreapp3.1\FormSubmission.genruntimeconfig.cache

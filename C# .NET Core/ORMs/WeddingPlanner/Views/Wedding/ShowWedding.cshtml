@@ -1,0 +1,18 @@
+@model Wedding
+<div class="d-flex justify-content-between">
+    <h1>@Model.Bride and @Model.Groom's Wedding</h1>
+    <div>
+        <a asp-action="Index" asp-controller="Wedding">Dashboard</a>
+        <a asp-action="logout" asp-controller="Home">Logout</a>
+    </div>
+</div>
+<hr>
+<h4><strong>Date:</strong> @Model.Date.ToString("d")</h4>
+<h4><strong>Address:</strong> @Model.Address</h4>
+<h4><strong>Guests:</strong></h4>
+<ul>
+    @foreach (var rsvp in @Model.Responses)
+    {
+        <li>@rsvp.Guest.FirstName @rsvp.Guest.LastName</li>
+    }
+</ul>

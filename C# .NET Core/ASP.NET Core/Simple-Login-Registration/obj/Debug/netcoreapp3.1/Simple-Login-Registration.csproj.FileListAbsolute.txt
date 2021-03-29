@@ -1,6 +1,5 @@
 C:\Users\Asus\Desktop\Coding-Dojo\C# .NET Core\ASP.NET Core\Simple-Login-Registration\bin\Debug\netcoreapp3.1\appsettings.Development.json
 C:\Users\Asus\Desktop\Coding-Dojo\C# .NET Core\ASP.NET Core\Simple-Login-Registration\bin\Debug\netcoreapp3.1\appsettings.json
-C:\Users\Asus\Desktop\Coding-Dojo\C# .NET Core\ASP.NET Core\Simple-Login-Registration\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
 C:\Users\Asus\Desktop\Coding-Dojo\C# .NET Core\ASP.NET Core\Simple-Login-Registration\bin\Debug\netcoreapp3.1\Simple-Login-Registration.exe
 C:\Users\Asus\Desktop\Coding-Dojo\C# .NET Core\ASP.NET Core\Simple-Login-Registration\bin\Debug\netcoreapp3.1\Simple-Login-Registration.deps.json
 C:\Users\Asus\Desktop\Coding-Dojo\C# .NET Core\ASP.NET Core\Simple-Login-Registration\bin\Debug\netcoreapp3.1\Simple-Login-Registration.runtimeconfig.json
@@ -35,3 +34,6 @@ C:\Users\Asus\Desktop\Coding-Dojo\C# .NET Core\ASP.NET Core\Simple-Login-Registr
 C:\Users\Asus\Desktop\Coding-Dojo\C# .NET Core\ASP.NET Core\Simple-Login-Registration\obj\Debug\netcoreapp3.1\Razor\Views\Home\Success.cshtml.g.cs
 C:\Users\Asus\Desktop\Coding-Dojo\C# .NET Core\ASP.NET Core\Simple-Login-Registration\obj\Debug\netcoreapp3.1\Razor\Views\Home\LoginPartial.cshtml.g.cs
 C:\Users\Asus\Desktop\Coding-Dojo\C# .NET Core\ASP.NET Core\Simple-Login-Registration\obj\Debug\netcoreapp3.1\Razor\Views\Home\RegistrationPartial.cshtml.g.cs
+C:\Users\Asus\Desktop\Coding-Dojo\C# .NET Core\ASP.NET Core\Simple-Login-Registration\obj\Debug\netcoreapp3.1\Simple-Login-Registration.csproj.CoreCompileInputs.cache
+C:\Users\Asus\Desktop\Coding-Dojo\C# .NET Core\ASP.NET Core\Simple-Login-Registration\obj\Debug\netcoreapp3.1\scopedcss\bundle\Simple-Login-Registration.styles.css
+C:\Users\Asus\Desktop\Coding-Dojo\C# .NET Core\ASP.NET Core\Simple-Login-Registration\obj\Debug\netcoreapp3.1\Simple-Login-Registration.genruntimeconfig.cache
