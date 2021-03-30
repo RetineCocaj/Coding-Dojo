@@ -1,0 +1,9 @@
+@model Message
+<div style = "margin-bottom: 3.5rem">
+    <p>Post a Message</p>
+    <form asp-controller="Wall" asp-action="PostMessage" method="POST" class="form-horizontal">
+        <textarea cols="100" rows="3" asp-for="MessageText" class="w-100"></textarea>
+        <br>
+        <input type="submit" value="Post" class="btn btn-default bg-info text-white mt-2">
+    </form>
+</div>

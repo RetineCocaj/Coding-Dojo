@@ -1,0 +1,38 @@
+@model Comment
+<div class="container">
+    <div class="d-flex justify-content-between align-items-center">
+        <h1>Coding Dojo Wall</h1>
+        <div class="d-flex justify-content-between w-25">
+            <h4>Welcome @ViewBag.username</h4>
+            <a asp-action="logout" asp-controller="Home">Log off</a>
+        </div>
+    </div>
+    <div class="mt-2 p-3">
+        <partial name="PostMessagePartial"/>
+        @foreach (var message in ViewBag.messages)
+        {
+            <div class="my-4">
+                <h6>@message.User.FirstName @message.User.LastName - @message.CreatedAt.ToString("dd/MM/yyyy HH:mm:ss")</h6>
+                <p class="ml-4 text-justify">@message.MessageText</p>
+                <div class="mt-2 ml-4">
+                    @foreach (var comment in ViewBag.comments)
+                    {
+                        if(message.MessageId == comment.MessageId)
+                        {
+                            <h6>@comment.User.FirstName @comment.User.LastName - @comment.CreatedAt.ToString("dd/MM/yyyy HH:mm:ss")</h6>
+                            <p class="ml-4 text-justify">@comment.CommentText</p>
+                        }
+                    }
+                    <div class="mb-4">
+                        <p>Post a Comment</p>
+                        <form asp-controller="Wall" asp-action="PostComment" asp-route-messageId="@message.MessageId" method="POST" class="form-horizontal">
+                            <textarea cols="100" rows="3" asp-for="CommentText" class="w-100"></textarea>
+                            <br>
+                            <input type="submit" value="Post" class="btn btn-default bg-success text-white mt-2">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
