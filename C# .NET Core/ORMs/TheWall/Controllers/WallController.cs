@@ -45,6 +45,7 @@ namespace TheWall.Controllers
 
             ViewBag.comments = _context.Comments
                 .Include(c => c.Message)
+                .Include(u => u.User)
                 .ToList();
 
             return View();
