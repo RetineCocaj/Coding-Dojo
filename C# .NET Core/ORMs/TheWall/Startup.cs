@@ -24,7 +24,7 @@ namespace TheWall
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<Context>(options => options.UseMySql("Server=retinasmysqlserver.mysql.database.azure.com; Port=3306; Database={your_database}; Uid=retinacocaj@retinasmysqlserver; Pwd={your_password}; SslMode=Preferred;"));
+            services.AddDbContext<Context>(options => options.UseMySql(Configuration["DbInfo:ConnectionString"]));
             services.AddControllersWithViews();
             services.AddSession();
         }
