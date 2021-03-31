@@ -1,0 +1,65 @@
+@model Customer
+<div class="col-5 p-4">
+    <a asp-action="Customers" asp-controller="Home">Add a new costumer</a>
+    <form asp-controller="Home" asp-action="AddCustomer" method="POST"
+        class="form-horizontal mt-2 d-flex align-items-end justify-content-between">
+        <label asp-for="Name" class="control-label"></label>
+        <input asp-for="Name" class="form-control w-50">
+        <span asp-validation-for="Name" class="display-6 text-danger"></span>
+        <input type="submit" value="Add" class="btn btn-primary">
+    </form>
+</div>
+<div>
+    <div class="d-flex justify-content-between align-items-end">
+        <p class="text-danger">@TempData["ErrorMessage"]</p>
+        @* <div>
+            <select id="search-box">
+                <option value=""></option>
+                @foreach (var customer in ViewBag.AllCustomers)
+                {
+                    <option value="@customer.Name">@customer.Name</option>
+                }
+            </select>
+            <input type='button' id='but_read' placeholder="Search name..."/>
+        </div> *@
+        <input type="search" id="form1" class="form-control mb-2 w-25"  />
+    </div>
+    <table class="table table-striped table-bordered">
+        <thead>
+            <tr>
+                <th>Customer Name</th>
+                <th>Created Date</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var customer in @ViewBag.AllCustomers)
+            {
+                <tr>
+                    <td>@customer.Name</td>
+                    <td>@customer.CreatedAt</td>
+                    <td>
+                        <a class="btn btn-danger" asp-action="RemoveCustomer" asp-route-customerId="@customer.CustomerId"
+                            asp-controller="Home">Remove</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+@* <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+<script>
+    $(document).ready(function () {
+
+        // Initialize select2
+        $("#search-box").select2();
+
+        // Read selected option
+        $('#but_read').click(function () {
+            var name = $('#search-box option:selected').text();
+            var value = $('#search-box').val();
+
+        });
+    });
+</script> *@

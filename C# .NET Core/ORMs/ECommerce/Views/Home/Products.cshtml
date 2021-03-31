@@ -1,0 +1,65 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+@model Product
+<div class="row">
+    <div class="col-3">
+        <div class="input-group mb-4">
+            <div class="form-outline w-100">
+                <input type="search" id="form1" class="form-control mb-2" placeholder="Search" />
+                <button type="button" class="btn btn-secondary float-right">Filter</button>
+            </div>
+        </div>
+        <a asp-action="Products" asp-controller="Home">Add a new product</a>
+        <form asp-controller="Home" asp-action="AddProduct" method="POST" class="form-horizontal mt-4">
+            <div class="form-group">
+                <label asp-for="Name" class="control-label"></label>
+                <div class="  ">
+                    <input asp-for="Name" class="form-control" placeholder="name...">
+                </div>
+                <span asp-validation-for="Name" class="display-6 text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Image" class="control-label"></label>
+                <div class="  ">
+                    <input asp-for="Image" class="form-control" placeholder="http://">
+                </div>
+                <span asp-validation-for="Image" class="display-6 text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Description" class="control-label"></label>
+                <div class="  ">
+                    <textarea asp-for="Description" rows="3" class="form-control"></textarea>
+                </div>
+                <span asp-validation-for="Description" class="display-6 text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Quantity" class="control-label"></label>
+                <div class="  ">
+                    <input asp-for="Quantity" class="form-control" value="1">
+                </div>
+                <span asp-validation-for="Quantity" class="display-6 text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <div>
+                    <input type="submit" value="Create" class="btn btn-primary float-right">
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="col-8 offset-1 d-flex flex-wrap p-2">
+        @foreach (var product in ViewBag.AllProducts)
+        {
+            <div class="text-center col-2 p-2 mr-4 d-flex flex-column justify-content-around" style="height: 200px;">
+                <img src="@product.Image" alt="Picture of @product.Name">
+                <p>@product.Name</p>
+                <p>(@product.Quantity left)</p>
+            </div>
+        }
+    </div>
+</div>

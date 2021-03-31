@@ -1,0 +1,5 @@
+{
+    "appService.preDeployTask": "publish-release",
+    "appService.deploySubpath": "bin\\Release\\net5.0\\publish",
+    "appService.defaultWebAppToDeploy": "/subscriptions/0d88196d-33ee-40d4-9b47-7ba15ff1faa4/resourceGroups/appsvc_windows_centralus/providers/Microsoft.Web/sites/thewall-forum"
+}

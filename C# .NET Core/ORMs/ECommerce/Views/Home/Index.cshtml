@@ -1,0 +1,87 @@
+@functions
+{
+    string FormatTimeAgo(DateTime date)
+    {
+        var timeSpan = DateTime.Now.Subtract(date);
+        string result = "";
+        if (timeSpan <= TimeSpan.FromSeconds(60))
+        {
+            result = string.Format("{0} seconds ago", timeSpan.Seconds);
+        }
+        else if (timeSpan <= TimeSpan.FromMinutes(60))
+        {
+            result = timeSpan.Minutes > 1 ? String.Format("{0} minutes ago", timeSpan.Minutes) : "a minute ago";
+        }
+        else if (timeSpan <= TimeSpan.FromHours(24))
+        {
+            result = timeSpan.Hours > 1 ? String.Format("{0} hours ago", timeSpan.Hours) : "an hour ago";
+        }
+        else if (timeSpan <= TimeSpan.FromDays(30))
+        {
+            result = timeSpan.Days > 1 ? String.Format("{0} days ago", timeSpan.Days) : "yesterday";
+        }
+        else if (timeSpan <= TimeSpan.FromDays(365))
+        {
+            result = timeSpan.Days > 30 ? String.Format("{0} months ago", timeSpan.Days / 30) : "a month ago";
+        }
+        else
+        {
+            result = timeSpan.Days > 365 ? String.Format("{0} years ago", timeSpan.Days / 365) : "a year ago";
+        }
+        return result;
+    }
+}
+
+<div class="row">
+    <div class="col-3">
+        <div class="input-group mb-4">
+            <div class="form-outline w-100">
+                <input type="search" id="form1" class="form-control mb-2" placeholder="Search" />
+                <button type="button" class="btn btn-secondary float-right">Filter</button>
+            </div>
+        </div>
+    </div>
+    <div class="col-8 offset-1">
+        <div>
+            <div class="d-flex p-2">
+                @foreach (var product in ViewBag.AllProducts)
+                {
+                    <div class="text-center col-2 p-2 mr-4 d-flex flex-column justify-content-around"
+                        style="height: 200px;">
+                        <img src="@product.Image" alt="Picture of @product.Name">
+                        <p>@product.Name</p>
+                        <p>(@product.Quantity left)</p>
+                    </div>
+                }
+            </div>
+            <a asp-action="Products" asp-controller="Home" class="d-block text-center mt-2">show more...</a>
+        </div>
+        <div class="p-2">
+            <p class="font-weight-bold m-0 text-decoration-underline">Recent Orders</p>
+            @foreach (var order in ViewBag.AllOrders)
+            {
+                if (order.Quantity > 1)
+                {
+                    string product = order.Product.Name;
+                    if(product.EndsWith("s")){ product += "es"; }
+                    else { product += "s"; }
+                    <p class="m-0 ml-4">@order.Customer.Name purchased @order.Quantity @product... (@FormatTimeAgo(order.CreatedAt))</p>
+                }
+                else
+                {
+                    <p class="m-0 ml-4">@order.Customer.Name purchased @order.Quantity @order.Product.Name... (@FormatTimeAgo(order.CreatedAt))</p>
+                }
+            }
+            <a asp-action="Orders" asp-controller="Home" class="d-block text-center mt-2">show all orders...</a>
+        </div>
+        <div class="p-2">
+            <p class="font-weight-bold m-0 text-decoration-underline">New Customers</p>
+            @foreach (var customer in ViewBag.AllCustomers)
+            {
+
+                <p class="m-0 ml-4">@customer.Name joined the store. (@FormatTimeAgo(customer.CreatedAt))</p>
+            }
+            <a asp-action="Customers" asp-controller="Home" class="d-block text-center mt-2">show all customers...</a>
+        </div>
+    </div>
+</div>
