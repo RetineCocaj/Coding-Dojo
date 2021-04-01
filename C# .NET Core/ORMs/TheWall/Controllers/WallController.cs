@@ -46,6 +46,12 @@ namespace TheWall.Controllers
             ViewBag.comments = _context.Comments
                 .Include(c => c.Message)
                 .Include(u => u.User)
+                .OrderBy(c => c.CreatedAt)
+                .ToList();
+            
+            ViewBag.loggedInUserMessages = _context.Messages
+                .Include(m => m.User)
+                .Where(m => m.UserId == loggedIn.UserId)
                 .ToList();
 
             return View();
@@ -77,6 +83,15 @@ namespace TheWall.Controllers
                 return RedirectToAction("Index");
             }
             return View("Index");
+        }
+
+        [HttpPost("DeleteMessage/{messageId}")]
+        public IActionResult DeleteMessage(int messageId)
+        {
+            var message = _context.Messages.FirstOrDefault(m => m.MessageId == messageId);
+            _context.Messages.Remove(message);
+            _context.SaveChanges();
+            return RedirectToAction("Index");
         }
     }
 }

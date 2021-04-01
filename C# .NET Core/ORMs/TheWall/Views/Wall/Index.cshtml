@@ -8,24 +8,39 @@
         </div>
     </div>
     <div class="mt-2 p-3">
-        <partial name="PostMessagePartial"/>
+        <partial name="PostMessagePartial" />
         @foreach (var message in ViewBag.messages)
         {
             <div class="my-4">
-                <h6>@message.User.FirstName @message.User.LastName - @message.CreatedAt.ToString("dd/MM/yyyy HH:mm:ss")</h6>
-                <p class="ml-4 text-justify">@message.MessageText</p>
+                <div class="d-flex justify-content-between">
+                    <h6>@message.User.FirstName @message.User.LastName - @message.CreatedAt.ToString("dd/MM/yyyy HH:mm:ss")</h6>
+                    @foreach (var messageOfLoggedInUser in ViewBag.loggedInUserMessages)
+                    {
+                        if (message == messageOfLoggedInUser)
+                        {
+                            <a asp-controller="Wall" asp-action="DeleteMessage" asp-route-messageId="@message.MessageId"
+                                class="text-danger mb-2 ml-4">Delete</a>
+                        }
+                    }
+                </div>
+
+                <p class="ml-4 text-justify pb-0">@message.MessageText</p>
+
+
                 <div class="mt-2 ml-4">
                     @foreach (var comment in ViewBag.comments)
                     {
-                        if(message.MessageId == comment.MessageId)
+                        if (message.MessageId == comment.MessageId)
                         {
-                            <h6>@comment.User.FirstName @comment.User.LastName - @comment.CreatedAt.ToString("dd/MM/yyyy HH:mm:ss")</h6>
+                            <h6>@comment.User.FirstName @comment.User.LastName - @comment.CreatedAt.ToString("dd/MM/yyyy HH:mm:ss")
+                            </h6>
                             <p class="ml-4 text-justify">@comment.CommentText</p>
                         }
                     }
                     <div class="mb-4">
                         <p>Post a Comment</p>
-                        <form asp-controller="Wall" asp-action="PostComment" asp-route-messageId="@message.MessageId" method="POST" class="form-horizontal">
+                        <form asp-controller="Wall" asp-action="PostComment" asp-route-messageId="@message.MessageId"
+                            method="POST" class="form-horizontal">
                             <textarea cols="100" rows="3" asp-for="CommentText" class="w-100"></textarea>
                             <br>
                             <input type="submit" value="Post" class="btn btn-default bg-success text-white mt-2">
