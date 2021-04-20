@@ -1,0 +1,92 @@
+@model Specialist
+<form method="POST" id="specialist-form" class="form-horizontal border p-1 m-2">
+    <div class="d-flex justify-content-between mb-4">
+        <div class="md-form col-6">
+            <i class="fa fa-user"></i>
+            <label asp-for="FirstName" class="control-label"></label>
+            <input asp-for="FirstName" class="form-control">
+            <span asp-validation-for="FirstName" class="display-6 text-danger" id="specialist-firstName-error"></span>
+        </div>
+        <div class="md-form col-6">
+            <i class="fa fa-calendar"></i>
+            <label asp-for="LastName" class="control-label"></label>
+            <input asp-for="LastName" class="form-control">
+            <span asp-validation-for="LastName" class="display-6 text-danger" id="specialist-lastName-error"></span>
+        </div>
+    </div>
+
+    <div class="d-flex justify-content-between mb-4">
+        <div class="md-form col-6">
+            <i class="fa fa-user"></i>
+            <label asp-for="Email" class="control-label"></label>
+            <input asp-for="Email" class="form-control">
+            <span asp-validation-for="Email" class="display-6 text-danger" id="specialist-email-error"></span>
+        </div>
+        <div class="md-form col-6">
+            <i class="fa fa-calendar"></i>
+            <label asp-for="Telephone" class="control-label"></label>
+            <input asp-for="Telephone" class="form-control">
+            <span asp-validation-for="Telephone" class="display-6 text-danger" id="specialist-telephone-error"></span>
+        </div>
+    </div>
+    <span class="display-6 col-12 text-danger" id="specialist-error"></span>
+    <button class="btn btn-default border text-white ml-3 mt-4 d-block" style="background-color:#199CA6;">Add</button>
+</form>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+
+        $("#specialist-form").on('submit', function (event) {
+            event.preventDefault();
+
+            var specialistForm = document.querySelector("#specialist-form");
+            var formData = new FormData(specialistForm);
+
+            $.ajax({
+                url: "addspecialist",
+                method: "post",
+                async: true,
+                data: formData,
+                contentType: false,
+                processData: false,
+                success: function (data) {
+                    $('#specialist-firstName-error').text('');
+                    $('#specialist-lastName-error').text('');
+                    $('#specialist-telephone-error').text('');
+                    $('#specialist-email-error').text('');
+                    $('#specialist-error').text('');
+                    console.log(data);
+                    if (typeof data.errorSpecialist !== 'undefined') {
+                        $("#specialist-error").text(data.errorSpecialist);
+                    }
+                    else if (typeof data.message !== 'undefined') {
+                        for (let i = 0; i < data.message.length; i++) {
+                            if(data.message[i].key == 'FirstName')
+                            {
+                                $('#specialist-firstName-error').text(data.message[i].value);
+                            }
+                            if(data.message[i].key == 'LastName')
+                            {
+                                $('#specialist-lastName-error').text(data.message[i].value);
+                            }
+                            if(data.message[i].key == 'Email')
+                            {
+                                $('#specialist-email-error').text(data.message[i].value);
+                            }
+                            if(data.message[i].key == 'Telephone')
+                            {
+                                $('#specialist-telephone-error').text(data.message[i].value);
+                            }        
+                        }
+                    }
+                    else if (typeof data !== 'undefined') {
+                        var newOption = '<option value="' + data.specialistId + '" selected>' + data.firstName + ' ' + data.lastName + '</option>';
+                        $("#select-specialist").append(newOption);
+                        $("#select-specialist").prop('disabled', false);
+                        $('#specialist-form').hide();
+                    }
+                }
+            })
+        });
+    });
+</script>

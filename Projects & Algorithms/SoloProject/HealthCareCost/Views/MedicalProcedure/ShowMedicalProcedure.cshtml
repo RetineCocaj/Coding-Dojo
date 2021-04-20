@@ -1,0 +1,10 @@
+@model MedicalProcedure
+<h2 class="mb-5 ml-2" style="color:#199CA6;">@Model.Name</h2>
+<ul class="list-group col-6">
+@foreach (var item in ViewBag.Hospitals)
+{
+    <a asp-controller="Hospital" asp-action="ShowHospital" asp-route-hospitalId="@item.Hospital.HospitalId">
+        <li class="list-group-item mb-2">@item.Hospital.Name</li> 
+    </a>
+}
+</ul>

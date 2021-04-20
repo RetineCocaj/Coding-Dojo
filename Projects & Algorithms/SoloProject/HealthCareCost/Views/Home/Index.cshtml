@@ -1,0 +1,31 @@
+@{
+    ViewData["Title"] = "Home";
+}
+<style>
+    .carousel-item {
+        background-color: #DD6453;
+    }
+
+    .carousel-item img {
+        height: 500px;
+    }
+
+    .btn-med:hover{
+        background-color: rgb(240,115,95);
+    }
+</style>
+<div class="row">
+    <div id="carouselExampleSlidesOnly" class="carousel slide w-100" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active d-flex justify-content-around">
+                <div class="p-3 ml-3 mt-4 text-white">
+                    <h3 class="text-uppercase">Start saving now by comparing prices on which medical services you are interested!</h3>
+                    <a class="btn btn-default border border-white text-white mt-5 btn-med" asp-action="MedicalServices" asp-controller="MedicalService">
+                        See all medical services offered by hospitals and specialists
+                    </a>
+                </div>
+                <img src="~/img/health.jfif" alt="Health care image">
+            </div>
+        </div>
+    </div>
+</div>

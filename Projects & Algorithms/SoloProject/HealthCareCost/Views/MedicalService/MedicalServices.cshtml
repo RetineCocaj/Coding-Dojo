@@ -1,0 +1,66 @@
+@model List<MedicalService>
+<style>
+    .list-group,
+    .list-group-item {
+        padding: 2%;
+        padding-right: 0;
+    }
+</style>
+
+<ul class="list-group col-4">
+    @foreach (var item in ViewBag.AllMedicalProcedures)
+    {
+        <li class="list-group-item mt-2 d-flex justify-content-between align-items-center toggle-hospital-list">
+            <a asp-action="ShowMedicalProcedure" asp-controller="MedicalProcedure"
+            asp-route-medicalProcedureId="@item.MedicalProcedureId">
+                @item.Name
+            </a>
+        </li>
+        <ul class="list-group col-11 offset-1 hospital-list">
+            @foreach (var med in Model)
+            {
+                @if (item.MedicalProcedureId == med.HospitalMedicalProcedure.MedicalProcedure.MedicalProcedureId)
+                {
+                    <li class="list-group-item d-flex justify-content-between align-items-center toggle-specialist-list">
+                        <a asp-action="ShowHospital" asp-controller="Hospital"
+                asp-route-hospitalId="@med.HospitalMedicalProcedure.Hospital.HospitalId">
+                            @med.HospitalMedicalProcedure.Hospital.Name
+                        </a>
+                        <p class="m-0 mr-2">@med.Cost.ToString("F2")€</p>
+                    </li>
+                    <ul class="list-group col-11 offset-1 specialist-list">
+                        <li class="list-group-item d-flex justify-content-between align-items-center toggle-specialization-list">
+                            <a asp-action="ShowSpecialist" asp-controller="Specialist"
+                    asp-route-specialistId="@med.HospitalSpecialist.Specialist.SpecialistId">
+                                @med.HospitalSpecialist.Specialist.FirstName @med.HospitalSpecialist.Specialist.LastName
+                            </a>
+                        </li>
+                        @* <ul class="list-group col-11 offset-1 specialization-list">
+                            @if (item.HospitalSpecialist.SpecialistId == s.SpecialistId)
+                            {
+                            @foreach (var ss in s.Specialist.Specializations)
+                            {
+                            <li class="list-group-item">@ss.Specialization.Name</li>
+                            }
+                            }
+                            </ul> *@
+                    </ul>
+                }
+            }
+        </ul>
+    }
+</ul>
+
+<script>
+    $(document).ready(function () {
+        $(".toggle-specialization-list").click(function () {
+            $(".specialization-list").toggle();
+        });
+        $(".toggle-specialist-list").click(function () {
+            $(".specialist-list").toggle();
+        });
+        $(".toggle-hospital-list").click(function () {
+            $(".hospital-list").toggle();
+        });
+    });
+</script>

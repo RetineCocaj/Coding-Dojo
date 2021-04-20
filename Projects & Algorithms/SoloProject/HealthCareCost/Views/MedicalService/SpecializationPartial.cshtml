@@ -1,0 +1,49 @@
+@model Specialization
+<form method="POST" id="specialization-form" class="form-horizontal border p-1 m-2">
+    <div class="d-flex justify-content-between mb-4">
+        <div class="md-form col-12">
+            <i class="fa fa-envelope"></i>
+            <label asp-for="Name" class="control-label"></label>
+            <input asp-for="Name" class="form-control">
+            <span asp-validation-for="Name" class="display-6 text-danger" id="specialization-name-error"></span>
+        </div>
+    </div>
+    <button class="btn btn-default border text-white ml-3 mt-4 d-block" style="background-color:#199CA6;">Add</button>
+</form>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+
+        $("#specialization-form").on('submit', function (event) {
+            event.preventDefault();
+
+            var specializationForm = document.querySelector("#specialization-form");
+            var formData = new FormData(specializationForm);
+
+            $.ajax({
+                url: "addspecialization",
+                method: "post",
+                async: true,
+                data: formData,
+                contentType: false,
+                processData: false,
+                success: function (data) {
+                    $('#specialization-name-error').text('');
+                    console.log(data);
+                    if (typeof data.errorName !== 'undefined') {
+                        $("#specialization-name-error").text(data.errorName);
+                    }
+                    else if (typeof data.message !== 'undefined') {
+                        $('#specialization-name-error').text(data.message[0].value);
+                    }
+                    else if (typeof data !== 'undefined') {
+                        var newOption = '<option value="' + data.specializationId + '" selected>' + data.name + '</option>';
+                        $("#select-specialization").append(newOption);
+                        $("#select-specialization").prop('disabled', false);
+                        $('#specialization-form').hide();
+                    }
+                }
+            })
+        });
+    });
+</script>

@@ -1,0 +1,10 @@
+@model List<Specialist>
+
+<ul class="list-group col-6">
+@foreach (var specialist in Model)
+{
+        <a asp-action="ShowSpecialist" asp-controller="Specialist" asp-route-specialistId="@specialist.SpecialistId">
+            <li class="list-group-item mb-2">@specialist.FirstName @specialist.LastName</li>
+        </a>
+}
+</ul>

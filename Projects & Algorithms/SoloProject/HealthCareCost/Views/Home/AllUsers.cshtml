@@ -1,0 +1,59 @@
+@model List<User>
+
+@{
+
+    ViewData["Title"] = "Users";
+}
+<style>
+    .users {
+        margin-top: 50px;
+    }
+</style>
+<div class="users col-7 bg-light p-3">
+    <h3 class="mb-3 ml-3 font-weight-bold">All Users</h3>
+
+    <table class="table table-borderless">
+        <thead>
+            <th>Name</th>
+            <th class="text-center">Role</th>
+            <th class="text-right">Edit Role</th>
+        </thead>
+        <tbody>
+            @foreach (var user in Model)
+            {
+                <tr>
+                    <td>
+                        <a asp-controller="Home" asp-action="ShowProfile" asp-route-userId="@user.UserId">
+                            <p>@user.FirstName @user.LastName</p>
+                        </a>
+                    </td>
+                    <td>
+                    <p class="text-center">@user.Role</p>
+                    </td>
+                    <td>
+                        @if (user.UserId != ViewBag.User.UserId)
+                        {
+                            if (user.Role == "admin")
+                            {
+                                <a asp-controller="Home" asp-action="RemoveAdmin" asp-route-userId="@user.UserId">
+                                    <p class="text-right">remove admin</p>
+                                </a>
+                            }
+                            else
+                            {
+                                <a asp-controller="Home" asp-action="MakeAdmin" asp-route-userId="@user.UserId">
+                                    <p class="text-right">make admin</p>
+                                </a>
+                            }
+                        }
+                        else
+                        {
+                            <p class="text-right"></p>
+                        }
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+</div>

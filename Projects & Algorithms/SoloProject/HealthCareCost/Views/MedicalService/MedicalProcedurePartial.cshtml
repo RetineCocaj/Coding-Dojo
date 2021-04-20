@@ -1,0 +1,51 @@
+@model MedicalProcedure
+<form method="POST" id="medprocedure-form" class="form-horizontal border p-1 m-2">
+@* <form asp-action="AddMedicalProcedure" asp-controller="MedicalService" method="POST" id="medprocedure-form" class=" form-horizontal border p-1 m-2"> *@
+    <div class="d-flex justify-content-between mb-4">
+        <div class="md-form col-12">
+            <i class="fa fa-user"></i>
+            <label asp-for="Name" class="control-label"></label>
+            <input asp-for="Name" class="form-control">
+            <span asp-validation-for="Name" class="display-6 text-danger" id="medprocedure-name-error"></span>
+        </div>
+    </div>
+    <p>@TempData["ErrorMedicalProcedure"]</p>
+    <button class="btn btn-default border text-white ml-3 mt-4 d-block" style="background-color:#199CA6;">Add</button>
+</form>
+<script type="text/javascript">
+    $(document).ready(function () {
+
+        $("#medprocedure-form").on('submit', function (event) {
+            event.preventDefault();
+
+            var medprocedureForm = document.querySelector("#medprocedure-form");
+            var formData = new FormData(medprocedureForm);
+
+            $.ajax({
+                url: "addmedicalprocedure",
+                method: "post",
+                async: true,
+                data: formData,
+                contentType: false,
+                processData: false,
+                success: function (data) {
+                    console.log(data);
+                    $('#medprocedure-name-error').text('');
+                    
+                    if (typeof data.errorName !== 'undefined') {
+                        $("#medprocedure-name-error").text(data.errorName);
+                    }
+                    else if (typeof data.message !== 'undefined') {
+                        $('#medprocedure-name-error').text(data.message[0].value);
+                    }
+                    else if (typeof data.name !== 'undefined') {
+                        var newOption = '<option value="' + data.medicalProcedureId + '" selected>' + data.name + '</option >';
+                        $("#select-med").append(newOption);
+                        $("#select-med").prop('disabled', false);
+                        $('#medprocedure-form').hide();
+                    }
+                }
+            })
+        });
+    });
+</script>

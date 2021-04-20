@@ -1,0 +1,66 @@
+@model User
+@{
+
+    ViewData["Title"] = "Register";
+}
+<style>
+    .register-form {
+        margin: auto;
+        margin-top:50px;
+    }
+</style>
+<div class="register-form col-7 bg-light p-3">
+    <h3 class="mb-3 ml-3">Register</h3>
+    <form asp-action="Register" asp-controller="Home" method="POST" class="form-horizontal">
+        <div class="d-flex justify-content-between mb-4">
+            <div class="md-form col-6">
+                <i class="fa fa-user"></i>
+                <label asp-for="FirstName" class="control-label"></label>
+                <input asp-for="FirstName" class="form-control">
+                <span asp-validation-for="FirstName" class="display-6 text-danger"></span>
+            </div>
+
+            <div class="md-form col-6">
+                <i class="fa fa-user"></i>
+                <label asp-for="LastName" class="control-label"></label>
+                <input asp-for="LastName" class="form-control">
+                <span asp-validation-for="LastName" class="display-6 text-danger"></span>
+            </div>
+        </div>
+
+        <div class="d-flex justify-content-between mb-4">
+            <div class="md-form col-6">
+                <i class="fa fa-calendar"></i>
+                <label asp-for="DateOfBirth" class="control-label"></label>
+                <input asp-for="DateOfBirth" class="form-control">
+                <span asp-validation-for="DateOfBirth" class="display-6 text-danger"></span>
+            </div>
+
+            <div class="md-form col-6">
+                <i class="fa fa-envelope"></i>
+                <label asp-for="Email" class="control-label"></label>
+                <input asp-for="Email" class="form-control">
+                <span asp-validation-for="Email" class="display-6 text-danger"></span>
+            </div>
+        </div>
+
+
+        <div class="d-flex justify-content-between mb-4">
+            <div class="md-form col-6">
+                <i class="fa fa-lock"></i>
+                <label asp-for="Password" class="control-label"></label>
+                <input asp-for="Password" class="form-control">
+                <span asp-validation-for="Password" class="display-6 text-danger"></span>
+            </div>
+
+            <div class="md-form col-6">
+                <i class="fa fa-lock"></i>
+                <label asp-for="ConfirmPassword" class="control-label"></label>
+                <input asp-for="ConfirmPassword" class="form-control">
+                <span asp-validation-for="ConfirmPassword" class="display-6 text-danger"></span>
+            </div>
+        </div>
+
+        <button class="btn btn-default border text-white ml-3" style="background-color:#199CA6;">Register</button>
+    </form>
+</div>

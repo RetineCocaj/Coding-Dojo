@@ -1,0 +1,8 @@
+<ul class="list-group col-6">
+@foreach (var medicalProcedure in ViewBag.AllMedicalProcedures)
+{
+        <a asp-action="ShowMedicalProcedure" asp-controller="MedicalProcedure" asp-route-medicalProcedureId="@medicalProcedure.MedicalProcedureId">
+            <li class="list-group-item mb-2">@medicalProcedure.Name</li>
+        </a>
+}
+</ul>

@@ -1,0 +1,63 @@
+@model User
+@{
+    ViewData["Title"] = "Profile";
+}
+<style>
+    .show-profile p {
+        display: inline-block;
+        font-weight: bold;
+    }
+
+    .show-profile {
+        margin-top: 50px;
+    }
+    .table td{
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+</style>
+
+
+<div class="show-profile col-5 bg-light p-3">
+    @if (Model.UserId == ViewBag.User.UserId)
+    {
+        <h4 class="mb-4 ml-3 font-weight-bold">My Profile</h4>
+    }
+    else
+    {
+        <h4 class="mb-4 ml-3 font-weight-bold">@Model.FirstName's Profile</h4>
+    }
+
+    <table class="table table-borderless mb-0">
+        <tr>
+            <td>First Name:</td>
+            <td>
+                <p class="mr-2">@Model.FirstName</p>
+            </td>
+        </tr>
+        <tr>
+            <td>Last Name:</td>
+            <td>
+                <p class="mr-2">@Model.LastName</p>
+            </td>
+        </tr>
+        <tr>
+            <td>Email:</td>
+            <td>
+                <p class="mr-2">@Model.Email</p>
+            </td>
+        </tr>
+        <tr>
+            <td>Date of Birth:</td>
+            <td>
+                <p class="mr-2">@Model.DateOfBirth.ToShortDateString()</p>
+            </td>
+        </tr>
+    </table>
+    @* <button class="btn"><i class="fa fa-pencil" aria-hidden="true"></i></button> *@
+</div>
+<script>
+    function edit(property) {
+        document.getElementById('edit').innerHTML = '<label>Edit your First Name: </label><input asp-for="FirstName" class="form-control">';
+    }
+</script>

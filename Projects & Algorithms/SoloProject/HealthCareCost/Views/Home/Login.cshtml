@@ -1,0 +1,29 @@
+@model LoginUser
+@{
+    ViewData["Title"] = "Login";
+}
+<style>
+    .login-form{
+        margin: auto;
+        margin-top:50px;
+    }
+</style>
+<div class="login-form col-4 bg-light p-3">
+    <h3 class="mb-3">Login</h3>
+    <form asp-action="Login" asp-controller="Home" method="POST" class="form-horizontal">
+        <div class="md-form mb-4">
+            <i class="fa fa-envelope"></i>
+            <label asp-for="EmailAttempt" class="control-label"></label>
+            <input asp-for="EmailAttempt" class="form-control">
+            <span asp-validation-for="EmailAttempt" class="display-6 text-danger"></span>
+        </div>
+
+        <div class="md-form mb-4">
+            <i class="fa fa-lock"></i>
+            <label asp-for="PasswordAttempt" class="control-label"></label>
+            <input asp-for="PasswordAttempt" class="form-control">
+            <span asp-validation-for="PasswordAttempt" class="display-6 text-danger"></span>
+        </div>
+        <button class="btn btn-default text-white" style="background-color:#199CA6;">Login</button>
+    </form>
+</div>

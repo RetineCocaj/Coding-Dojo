@@ -1,0 +1,130 @@
+@model MedicalService
+@{
+    ViewData["Title"] = "Medical Service Form";
+}
+
+<style>
+    #hospital-form,
+    #specialist-form,
+    #specialization-form,
+    #medprocedure-form {
+        display: none;
+    }
+    hr{
+        margin-bottom: 20px;
+    }
+</style>
+<div class="row">
+    <div class="medical-service-form col-6 bg-light p-3">
+        <h3 class="mb-5 ml-3">Create Medical Service</h3>
+        <p class="text-danger col-12">@TempData["Error"]</p>
+        <form asp-action="CreateMedicalService" asp-controller="MedicalService" method="POST" class="form-horizontal">
+            <select id="select-hospital" asp-for="HospitalMedicalProcedure.HospitalId" class="md-form col-11 m-3 mb-4 form-control">
+                <option value="" disabled selected>Choose a hospital</option>
+                @foreach (var hospital in ViewBag.AllHospitals)
+
+                {
+                    <option value="@hospital.HospitalId">@hospital.Name</option>
+
+                }
+            </select>
+            <a class="btn btn-light border ml-3 col-5 mb-2" id="hospital-form-btn">
+                <i class="fa fa-plus" aria-hidden="true"></i>
+                Add Hospital
+            </a>
+
+            <hr>
+
+            <select id="select-specialist" asp-for="HospitalSpecialist.SpecialistId" class="md-form col-11 m-3 mb-4 form-control">
+                <option value="" disabled selected>Choose a specialist</option>
+                @foreach (var specialist in ViewBag.AllSpecialists)
+
+                {
+                    <option value="@specialist.SpecialistId">@specialist.FirstName @specialist.LastName</option>
+
+                }
+            </select>
+            <a class="btn btn-light border ml-3 col-5 mb-2" id="specialist-form-btn">
+                <i class="fa fa-plus" aria-hidden="true"></i>
+                Add Specialist
+            </a>
+
+            <hr>
+
+            <select id="select-specialization" asp-for="SpecialistSpecialization.SpecializationId" class="md-form col-11 m-3 mb-4 form-control">
+                <option value="" disabled selected>Choose a specialization</option>
+                @foreach (var specialization in ViewBag.AllSpecializations)
+
+                {
+                    <option value="@specialization.SpecializationId">@specialization.Name</option>
+
+                }
+            </select>
+            <a class="btn btn-light border ml-3 col-5 mb-2" id="specialization-form-btn">
+                <i class="fa fa-plus" aria-hidden="true"></i>
+                Add Specialization
+            </a>
+
+            <hr>
+
+            <div class="d-flex justify-content-between">
+                <select id="select-med" asp-for="HospitalMedicalProcedure.MedicalProcedureId" class="md-form col-8 mx-3 mb-4 form-control">
+                    <option value="" disabled selected>Choose a medical service</option>
+                    @foreach (var MedicalProcedure in ViewBag.AllMedicalProcedures)
+
+                    {
+                        <option value="@MedicalProcedure.MedicalProcedureId">@MedicalProcedure.Name</option>
+
+                    }
+                </select>
+                <p>@ViewBag.MedicalProcedureAddedMsg</p>
+                <div class="md-form col-3">
+                    <input asp-for="Cost" class="form-control" type="number" step="0.01"
+                        min="0" placeholder="Cost">
+                    <span asp-validation-for="Cost" class="display-6 text-danger"></span>
+                </div>
+            </div>
+            <a class="btn btn-light border ml-3 col-5 mb-2" id="medprocedure-form-btn">
+                <i class="fa fa-plus" aria-hidden="true"></i>
+                Add Medical Procedure
+            </a>
+            <button class="btn btn-default border text-white ml-3 mt-4 d-block"
+                style="background-color:#199CA6;">Create</button>
+        </form>
+    </div>
+    <div class="medical-service-form col-5">
+        <partial name="HospitalPartial" />
+        <partial name="SpecialistPartial" />
+        <partial name="SpecializationPartial" />
+        <partial name="MedicalProcedurePartial" />
+    </div>
+</div>
+
+<script>
+    $(document).ready(function () {
+        $("#hospital-form-btn").click(function () {
+            $("#hospital-form").toggle();
+            var selectize = $("#select-hospital");
+            if ($('#hospital-form').is(':visible')) selectize.prop('disabled', true);
+            else selectize.prop('disabled', false);
+        });
+        $("#specialist-form-btn").click(function () {
+            $("#specialist-form").toggle();
+            var selectize = $("#select-specialist");
+            if ($('#specialist-form').is(':visible')) selectize.prop('disabled', true);
+            else selectize.prop('disabled', false);
+        });
+        $("#specialization-form-btn").click(function () {
+            $("#specialization-form").toggle();
+            var selectize = $("#select-specialization");
+            if ($('#specialization-form').is(':visible')) selectize.prop('disabled', true);
+            else selectize.prop('disabled', false);
+        });
+        $("#medprocedure-form-btn").click(function () {
+            $("#medprocedure-form").toggle();
+            var selectize = $("#select-med");
+            if ($('#medprocedure-form').is(':visible')) selectize.prop('disabled', true);
+            else selectize.prop('disabled', false);
+        });
+    });
+</script>
