@@ -1,0 +1,16 @@
+C:\Users\Asus\Desktop\Coding-Dojo\Projects & Algorithms\Arrays\MinToFront\obj\Debug\net5.0\MinToFront.csprojAssemblyReference.cache
+C:\Users\Asus\Desktop\Coding-Dojo\Projects & Algorithms\Arrays\MinToFront\obj\Debug\net5.0\MinToFront.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Asus\Desktop\Coding-Dojo\Projects & Algorithms\Arrays\MinToFront\obj\Debug\net5.0\MinToFront.AssemblyInfoInputs.cache
+C:\Users\Asus\Desktop\Coding-Dojo\Projects & Algorithms\Arrays\MinToFront\obj\Debug\net5.0\MinToFront.AssemblyInfo.cs
+C:\Users\Asus\Desktop\Coding-Dojo\Projects & Algorithms\Arrays\MinToFront\obj\Debug\net5.0\MinToFront.csproj.CoreCompileInputs.cache
+C:\Users\Asus\Desktop\Coding-Dojo\Projects & Algorithms\Arrays\MinToFront\bin\Debug\net5.0\MinToFront.exe
+C:\Users\Asus\Desktop\Coding-Dojo\Projects & Algorithms\Arrays\MinToFront\bin\Debug\net5.0\MinToFront.deps.json
+C:\Users\Asus\Desktop\Coding-Dojo\Projects & Algorithms\Arrays\MinToFront\bin\Debug\net5.0\MinToFront.runtimeconfig.json
+C:\Users\Asus\Desktop\Coding-Dojo\Projects & Algorithms\Arrays\MinToFront\bin\Debug\net5.0\MinToFront.runtimeconfig.dev.json
+C:\Users\Asus\Desktop\Coding-Dojo\Projects & Algorithms\Arrays\MinToFront\bin\Debug\net5.0\MinToFront.dll
+C:\Users\Asus\Desktop\Coding-Dojo\Projects & Algorithms\Arrays\MinToFront\bin\Debug\net5.0\ref\MinToFront.dll
+C:\Users\Asus\Desktop\Coding-Dojo\Projects & Algorithms\Arrays\MinToFront\bin\Debug\net5.0\MinToFront.pdb
+C:\Users\Asus\Desktop\Coding-Dojo\Projects & Algorithms\Arrays\MinToFront\obj\Debug\net5.0\MinToFront.dll
+C:\Users\Asus\Desktop\Coding-Dojo\Projects & Algorithms\Arrays\MinToFront\obj\Debug\net5.0\ref\MinToFront.dll
+C:\Users\Asus\Desktop\Coding-Dojo\Projects & Algorithms\Arrays\MinToFront\obj\Debug\net5.0\MinToFront.pdb
+C:\Users\Asus\Desktop\Coding-Dojo\Projects & Algorithms\Arrays\MinToFront\obj\Debug\net5.0\MinToFront.genruntimeconfig.cache
