@@ -1,0 +1,16 @@
+C:\Users\Asus\Desktop\Coding-Dojo\Projects & Algorithms\Arrays\ToDo2\bin\Debug\net5.0\ToDo2.exe
+C:\Users\Asus\Desktop\Coding-Dojo\Projects & Algorithms\Arrays\ToDo2\bin\Debug\net5.0\ToDo2.deps.json
+C:\Users\Asus\Desktop\Coding-Dojo\Projects & Algorithms\Arrays\ToDo2\bin\Debug\net5.0\ToDo2.runtimeconfig.json
+C:\Users\Asus\Desktop\Coding-Dojo\Projects & Algorithms\Arrays\ToDo2\bin\Debug\net5.0\ToDo2.runtimeconfig.dev.json
+C:\Users\Asus\Desktop\Coding-Dojo\Projects & Algorithms\Arrays\ToDo2\bin\Debug\net5.0\ToDo2.dll
+C:\Users\Asus\Desktop\Coding-Dojo\Projects & Algorithms\Arrays\ToDo2\bin\Debug\net5.0\ref\ToDo2.dll
+C:\Users\Asus\Desktop\Coding-Dojo\Projects & Algorithms\Arrays\ToDo2\bin\Debug\net5.0\ToDo2.pdb
+C:\Users\Asus\Desktop\Coding-Dojo\Projects & Algorithms\Arrays\ToDo2\obj\Debug\net5.0\ToDo2.csprojAssemblyReference.cache
+C:\Users\Asus\Desktop\Coding-Dojo\Projects & Algorithms\Arrays\ToDo2\obj\Debug\net5.0\ToDo2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Asus\Desktop\Coding-Dojo\Projects & Algorithms\Arrays\ToDo2\obj\Debug\net5.0\ToDo2.AssemblyInfoInputs.cache
+C:\Users\Asus\Desktop\Coding-Dojo\Projects & Algorithms\Arrays\ToDo2\obj\Debug\net5.0\ToDo2.AssemblyInfo.cs
+C:\Users\Asus\Desktop\Coding-Dojo\Projects & Algorithms\Arrays\ToDo2\obj\Debug\net5.0\ToDo2.csproj.CoreCompileInputs.cache
+C:\Users\Asus\Desktop\Coding-Dojo\Projects & Algorithms\Arrays\ToDo2\obj\Debug\net5.0\ToDo2.dll
+C:\Users\Asus\Desktop\Coding-Dojo\Projects & Algorithms\Arrays\ToDo2\obj\Debug\net5.0\ref\ToDo2.dll
+C:\Users\Asus\Desktop\Coding-Dojo\Projects & Algorithms\Arrays\ToDo2\obj\Debug\net5.0\ToDo2.pdb
+C:\Users\Asus\Desktop\Coding-Dojo\Projects & Algorithms\Arrays\ToDo2\obj\Debug\net5.0\ToDo2.genruntimeconfig.cache
