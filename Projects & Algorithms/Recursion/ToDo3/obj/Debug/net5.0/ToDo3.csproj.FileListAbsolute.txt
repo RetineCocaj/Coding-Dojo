@@ -1,0 +1,16 @@
+C:\Users\Asus\Desktop\Coding-Dojo\Projects & Algorithms\Recursion\ToDo3\bin\Debug\net5.0\ToDo3.exe
+C:\Users\Asus\Desktop\Coding-Dojo\Projects & Algorithms\Recursion\ToDo3\bin\Debug\net5.0\ToDo3.deps.json
+C:\Users\Asus\Desktop\Coding-Dojo\Projects & Algorithms\Recursion\ToDo3\bin\Debug\net5.0\ToDo3.runtimeconfig.json
+C:\Users\Asus\Desktop\Coding-Dojo\Projects & Algorithms\Recursion\ToDo3\bin\Debug\net5.0\ToDo3.runtimeconfig.dev.json
+C:\Users\Asus\Desktop\Coding-Dojo\Projects & Algorithms\Recursion\ToDo3\bin\Debug\net5.0\ToDo3.dll
+C:\Users\Asus\Desktop\Coding-Dojo\Projects & Algorithms\Recursion\ToDo3\bin\Debug\net5.0\ref\ToDo3.dll
+C:\Users\Asus\Desktop\Coding-Dojo\Projects & Algorithms\Recursion\ToDo3\bin\Debug\net5.0\ToDo3.pdb
+C:\Users\Asus\Desktop\Coding-Dojo\Projects & Algorithms\Recursion\ToDo3\obj\Debug\net5.0\ToDo3.csprojAssemblyReference.cache
+C:\Users\Asus\Desktop\Coding-Dojo\Projects & Algorithms\Recursion\ToDo3\obj\Debug\net5.0\ToDo3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Asus\Desktop\Coding-Dojo\Projects & Algorithms\Recursion\ToDo3\obj\Debug\net5.0\ToDo3.AssemblyInfoInputs.cache
+C:\Users\Asus\Desktop\Coding-Dojo\Projects & Algorithms\Recursion\ToDo3\obj\Debug\net5.0\ToDo3.AssemblyInfo.cs
+C:\Users\Asus\Desktop\Coding-Dojo\Projects & Algorithms\Recursion\ToDo3\obj\Debug\net5.0\ToDo3.csproj.CoreCompileInputs.cache
+C:\Users\Asus\Desktop\Coding-Dojo\Projects & Algorithms\Recursion\ToDo3\obj\Debug\net5.0\ToDo3.dll
+C:\Users\Asus\Desktop\Coding-Dojo\Projects & Algorithms\Recursion\ToDo3\obj\Debug\net5.0\ref\ToDo3.dll
+C:\Users\Asus\Desktop\Coding-Dojo\Projects & Algorithms\Recursion\ToDo3\obj\Debug\net5.0\ToDo3.pdb
+C:\Users\Asus\Desktop\Coding-Dojo\Projects & Algorithms\Recursion\ToDo3\obj\Debug\net5.0\ToDo3.genruntimeconfig.cache
