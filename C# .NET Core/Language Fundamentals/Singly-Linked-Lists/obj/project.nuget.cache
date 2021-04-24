@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "ABUZH68+Qf4qp5eP4yzd9YyW8w07WkJPTMO1G3elkEEqrB5Wm1OMlsKMBo0qr2nqVDB7V1CjMK3NzbILdLa/6w==",
+  "dgSpecHash": "1hai21Pik1xrvjhKFiN1zQdPdSFsyssn9SeZ0iFBBvRxpgCd1ljlb7w70uM5Kw5JS+SiUt8St/XdeAAfuSSmTQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Asus\\Desktop\\Coding-Dojo\\C# .NET Core\\Language Fundamentals\\Singly-Linked-Lists\\Singly-Linked-Lists.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Asus\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.13\\microsoft.netcore.app.host.win-x64.3.1.13.nupkg.sha512"
+  ],
   "logs": []
 }
