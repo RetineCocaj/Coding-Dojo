@@ -1,0 +1,16 @@
+C:\Users\Asus\Desktop\Coding-Dojo\Projects & Algorithms\LinkedLists\bin\Debug\net5.0\LinkedLists.exe
+C:\Users\Asus\Desktop\Coding-Dojo\Projects & Algorithms\LinkedLists\bin\Debug\net5.0\LinkedLists.deps.json
+C:\Users\Asus\Desktop\Coding-Dojo\Projects & Algorithms\LinkedLists\bin\Debug\net5.0\LinkedLists.runtimeconfig.json
+C:\Users\Asus\Desktop\Coding-Dojo\Projects & Algorithms\LinkedLists\bin\Debug\net5.0\LinkedLists.runtimeconfig.dev.json
+C:\Users\Asus\Desktop\Coding-Dojo\Projects & Algorithms\LinkedLists\bin\Debug\net5.0\LinkedLists.dll
+C:\Users\Asus\Desktop\Coding-Dojo\Projects & Algorithms\LinkedLists\bin\Debug\net5.0\ref\LinkedLists.dll
+C:\Users\Asus\Desktop\Coding-Dojo\Projects & Algorithms\LinkedLists\bin\Debug\net5.0\LinkedLists.pdb
+C:\Users\Asus\Desktop\Coding-Dojo\Projects & Algorithms\LinkedLists\obj\Debug\net5.0\LinkedLists.csprojAssemblyReference.cache
+C:\Users\Asus\Desktop\Coding-Dojo\Projects & Algorithms\LinkedLists\obj\Debug\net5.0\LinkedLists.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Asus\Desktop\Coding-Dojo\Projects & Algorithms\LinkedLists\obj\Debug\net5.0\LinkedLists.AssemblyInfoInputs.cache
+C:\Users\Asus\Desktop\Coding-Dojo\Projects & Algorithms\LinkedLists\obj\Debug\net5.0\LinkedLists.AssemblyInfo.cs
+C:\Users\Asus\Desktop\Coding-Dojo\Projects & Algorithms\LinkedLists\obj\Debug\net5.0\LinkedLists.csproj.CoreCompileInputs.cache
+C:\Users\Asus\Desktop\Coding-Dojo\Projects & Algorithms\LinkedLists\obj\Debug\net5.0\LinkedLists.dll
+C:\Users\Asus\Desktop\Coding-Dojo\Projects & Algorithms\LinkedLists\obj\Debug\net5.0\ref\LinkedLists.dll
+C:\Users\Asus\Desktop\Coding-Dojo\Projects & Algorithms\LinkedLists\obj\Debug\net5.0\LinkedLists.pdb
+C:\Users\Asus\Desktop\Coding-Dojo\Projects & Algorithms\LinkedLists\obj\Debug\net5.0\LinkedLists.genruntimeconfig.cache
