@@ -12,11 +12,12 @@ namespace LinkedLists
             list.AddFront(30);
             list.AddFront(40);
             list.AddFront(50);
-            list.PrintValues();
+            Console.WriteLine("Values of list");
+            Console.WriteLine(list.Display());
 
             list.RemoveFront();
             Console.WriteLine("\n\nAfter removing front node");
-            list.PrintValues();
+            Console.WriteLine(list.Display());
 
             Console.WriteLine("\n\nReturn front node");
             Console.WriteLine(list.Front());
@@ -27,6 +28,14 @@ namespace LinkedLists
             Console.WriteLine("\nLength of list is");
             Console.WriteLine(list.Length());
 
+            Console.WriteLine("\nMaximum value of list");
+            Console.WriteLine(list.Max());
+            
+            Console.WriteLine("\nMinimum value of list");
+            Console.WriteLine(list.Min());
+
+            Console.WriteLine("\nAverage value of list");
+            Console.WriteLine(list.Average());
         }
     }
 }
