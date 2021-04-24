@@ -21,6 +21,10 @@ namespace Fronts
             Console.WriteLine("\n\nReturn front node");
             Console.WriteLine(list.Front());
 
+            Console.WriteLine("\noes list contains value of 30?");
+            Console.WriteLine(list.Contains(30) ? "Yes" : "No");
+
+
         }
     }
 }

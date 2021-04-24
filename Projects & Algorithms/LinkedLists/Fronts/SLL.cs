@@ -36,6 +36,17 @@ namespace Fronts
             return null;
         }
 
+        public bool Contains(int val)
+        {
+            Node runner = Head;
+            while(runner != null)
+            {
+                if(runner.Value == val) return true;
+                runner = runner.Next;
+            }
+            return false;
+        }
+
         public void PrintValues()
         {
             Node temp = Head;
