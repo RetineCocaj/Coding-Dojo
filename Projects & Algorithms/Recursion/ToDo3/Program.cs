@@ -6,7 +6,9 @@ namespace ToDo3
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(rBinarySearch(new int[]{1,3,4,6,8},2));
+            Console.WriteLine(rBinarySearch(new int[]{4,5,6,8,12},5));
+            Console.WriteLine(rGCF(123456,987654));
+
         }
 
 
@@ -31,6 +33,12 @@ namespace ToDo3
                 return rBinarySearch(newArr, value);
             }
             return false;
+        }
+
+        public static int rGCF(int a, int b)
+        {
+            if(a == b || a == 0) return b;
+            return rGCF(b%a, a);
         }
     }
 }
