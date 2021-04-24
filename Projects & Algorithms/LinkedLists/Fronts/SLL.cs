@@ -47,6 +47,18 @@ namespace Fronts
             return false;
         }
 
+        public int Length()
+        {
+            Node runner = Head;
+            int countNodes = 0;
+            while(runner != null)
+            {
+                countNodes++;
+                runner = runner.Next;
+            }
+            return countNodes;
+        }
+
         public void PrintValues()
         {
             Node temp = Head;
