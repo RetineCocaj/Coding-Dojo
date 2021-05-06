@@ -9285,11 +9285,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Asus\\Desktop\\Coding-Dojo\\Projects & Algorithms\\GroupProject\\FoodProject\\FoodProject.csproj",
+      "projectUniqueName": "C:\\Users\\Asus\\Desktop\\FoodProject\\FoodProject.csproj",
       "projectName": "FoodProject",
-      "projectPath": "C:\\Users\\Asus\\Desktop\\Coding-Dojo\\Projects & Algorithms\\GroupProject\\FoodProject\\FoodProject.csproj",
+      "projectPath": "C:\\Users\\Asus\\Desktop\\FoodProject\\FoodProject.csproj",
       "packagesPath": "C:\\Users\\Asus\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Asus\\Desktop\\Coding-Dojo\\Projects & Algorithms\\GroupProject\\FoodProject\\obj\\",
+      "outputPath": "C:\\Users\\Asus\\Desktop\\FoodProject\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Asus\\AppData\\Roaming\\NuGet\\NuGet.Config",

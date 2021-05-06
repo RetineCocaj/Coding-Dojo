@@ -37,6 +37,11 @@ namespace FoodProject.Controllers
 
         public ActionResult Buy(string id, string returnUrl)
         {
+            if (User.Identity.IsAuthenticated == false)
+            {
+                TempData["NotLoggedIn"] = "Please Login/Register to continue the process";
+                return Redirect(returnUrl);
+            }
             FoodItem foodItem = _context.FoodItems.Find(id);
 
             if (foodItem == null)
@@ -166,17 +171,18 @@ namespace FoodProject.Controllers
             var categories = _context.Categories.Include(c => c.FoodItems);
             CategoryViewModel viewModel = new CategoryViewModel();
             viewModel.FoodItems = new List<FoodItem>();
+            viewModel.Categories = categories.ToList();
             if (categoryId != null)
             {
                 ViewBag.CategoryId = categoryId;
-
                 var foods = categories
                     .FirstOrDefault(c => c.CategoryId == categoryId)
                     .FoodItems;
 
                 if (User.Identity.IsAuthenticated == false)
                 {
-                    return View(foods);
+                    viewModel.FoodItems = foods;
+                    return View(viewModel);
                 }
 
                 Dictionary<string, FoodItem> foodItems = foods.ToDictionary(fList => fList.Name);
@@ -205,7 +211,6 @@ namespace FoodProject.Controllers
                 viewModel.FoodItems =  foodItems.Select(f => f.Value).ToList();
             }
 
-            viewModel.Categories = categories.ToList();
 
             ViewBag.ReturnUrl = Url.Action("Category", "Home");
 

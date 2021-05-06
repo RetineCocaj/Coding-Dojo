@@ -13,6 +13,8 @@ namespace FoodProject.Models
         public double Sum { get; set; }
         public string UserId { get; set; }
         public ICollection<CartItem> Items { get; set; }
+        public DateTime CreatedAt { get; set; } = DateTime.Now;
+        public DateTime UpdatedAt { get; set; } = DateTime.Now;
 
     }
 }

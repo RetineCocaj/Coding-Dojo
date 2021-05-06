@@ -14,6 +14,8 @@
     }
 </h2>
 
+<h5 class="text-danger">@TempData["NotLoggedIn"]</h5>
+
 @if (ViewBag.Message != null)
 {
     <p class="text-center text-success">@(ViewBag.Message as string)</p>
@@ -58,7 +60,7 @@ else
             <td>
                 @if (item.isEnabled == true)
                 {
-                    @Html.ActionLink("Add To Cart", "Buy", new { id = item.FoodItemId, returnUrl = Url.Action("All") }, new {
+                    @Html.ActionLink("Add To Cart", "Buy", new { id = item.FoodItemId, returnUrl = Url.Action() }, new {
             @class ="btn btn-primary" })
                 }
                 else

@@ -25,5 +25,8 @@ namespace FoodProject.Models
 
         public string CartItemId { get; set; }
 
+        public DateTime CreatedAt { get; set; } = DateTime.Now;
+        public DateTime UpdatedAt { get; set; } = DateTime.Now;
+
     }
 }

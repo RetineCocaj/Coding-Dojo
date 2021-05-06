@@ -12,5 +12,7 @@ namespace FoodProject.Models
         public string Name { get; set; }
         public ICollection<FoodItem> FoodItems { get; set; }
 
+        public DateTime CreatedAt { get; set; } = DateTime.Now;
+        public DateTime UpdatedAt { get; set; } = DateTime.Now;
     }
 }
