@@ -14,7 +14,7 @@
 
         @Html.HiddenFor(model => model.FoodItemId)
         <input type="hidden" name="returnUrl" value="@(ViewBag.ReturnUrl == null ? "" : (ViewBag.ReturnUrl as string))" />
-        <dl class="dl-horizontal d-flex justify-content-between flex-column">
+        <dl class="dl-horizontal d-flex justify-content-between flex-column" style="width:250px;">
             <div class="d-flex justify-content-between">
                 <dt class="mr-5">
                     @Html.DisplayNameFor(model => model.Name)

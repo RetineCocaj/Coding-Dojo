@@ -9,8 +9,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace FoodProject.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20210505110220_SecondMigration")]
-    partial class SecondMigration
+    [Migration("20210504151744_FirstMigration")]
+    partial class FirstMigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -163,7 +163,7 @@ namespace FoodProject.Migrations
                         .HasColumnType("varchar(255) CHARACTER SET utf8mb4");
 
                     b.Property<string>("CartItemId")
-                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+                        .HasColumnType("varchar(255) CHARACTER SET utf8mb4");
 
                     b.Property<int?>("CategoryId")
                         .HasColumnType("int");
@@ -185,6 +185,8 @@ namespace FoodProject.Migrations
 
                     b.HasKey("FoodItemId");
 
+                    b.HasIndex("CartItemId");
+
                     b.HasIndex("CategoryId");
 
                     b.ToTable("FoodItems");
@@ -201,9 +203,6 @@ namespace FoodProject.Migrations
 
                     b.Property<DateTime>("OrderDate")
                         .HasColumnType("datetime(6)");
-
-                    b.Property<string>("Status")
-                        .HasColumnType("longtext CHARACTER SET utf8mb4");
 
                     b.Property<double>("TotalAmount")
                         .HasColumnType("double");
@@ -390,6 +389,11 @@ namespace FoodProject.Migrations
 
             modelBuilder.Entity("FoodProject.Models.FoodItem", b =>
                 {
+                    b.HasOne("FoodProject.Models.CartItem", "CartItem")
+                        .WithMany()
+                        .HasForeignKey("CartItemId")
+                        .OnDelete(DeleteBehavior.Cascade);
+
                     b.HasOne("FoodProject.Models.Category", "Category")
                         .WithMany("FoodItems")
                         .HasForeignKey("CategoryId");
