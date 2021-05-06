@@ -1,0 +1,16 @@
+C:\Users\Asus\Desktop\Coding-Dojo\Projects & Algorithms\Trees\ToDo1\bin\Debug\net5.0\ToDo1.exe
+C:\Users\Asus\Desktop\Coding-Dojo\Projects & Algorithms\Trees\ToDo1\bin\Debug\net5.0\ToDo1.deps.json
+C:\Users\Asus\Desktop\Coding-Dojo\Projects & Algorithms\Trees\ToDo1\bin\Debug\net5.0\ToDo1.runtimeconfig.json
+C:\Users\Asus\Desktop\Coding-Dojo\Projects & Algorithms\Trees\ToDo1\bin\Debug\net5.0\ToDo1.runtimeconfig.dev.json
+C:\Users\Asus\Desktop\Coding-Dojo\Projects & Algorithms\Trees\ToDo1\bin\Debug\net5.0\ToDo1.dll
+C:\Users\Asus\Desktop\Coding-Dojo\Projects & Algorithms\Trees\ToDo1\bin\Debug\net5.0\ref\ToDo1.dll
+C:\Users\Asus\Desktop\Coding-Dojo\Projects & Algorithms\Trees\ToDo1\bin\Debug\net5.0\ToDo1.pdb
+C:\Users\Asus\Desktop\Coding-Dojo\Projects & Algorithms\Trees\ToDo1\obj\Debug\net5.0\ToDo1.csprojAssemblyReference.cache
+C:\Users\Asus\Desktop\Coding-Dojo\Projects & Algorithms\Trees\ToDo1\obj\Debug\net5.0\ToDo1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Asus\Desktop\Coding-Dojo\Projects & Algorithms\Trees\ToDo1\obj\Debug\net5.0\ToDo1.AssemblyInfoInputs.cache
+C:\Users\Asus\Desktop\Coding-Dojo\Projects & Algorithms\Trees\ToDo1\obj\Debug\net5.0\ToDo1.AssemblyInfo.cs
+C:\Users\Asus\Desktop\Coding-Dojo\Projects & Algorithms\Trees\ToDo1\obj\Debug\net5.0\ToDo1.csproj.CoreCompileInputs.cache
+C:\Users\Asus\Desktop\Coding-Dojo\Projects & Algorithms\Trees\ToDo1\obj\Debug\net5.0\ToDo1.dll
+C:\Users\Asus\Desktop\Coding-Dojo\Projects & Algorithms\Trees\ToDo1\obj\Debug\net5.0\ref\ToDo1.dll
+C:\Users\Asus\Desktop\Coding-Dojo\Projects & Algorithms\Trees\ToDo1\obj\Debug\net5.0\ToDo1.pdb
+C:\Users\Asus\Desktop\Coding-Dojo\Projects & Algorithms\Trees\ToDo1\obj\Debug\net5.0\ToDo1.genruntimeconfig.cache

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "h8gYOwXhY6WzT3KmWUuRh1NxnPf+6IWkrA5x8tJtsNKc93NDp0WqNFVC0O+NiYOMv4FvY5wYKL19usF3EtjwZg==",
+  "dgSpecHash": "1qroOcxEYttf3byiTPODja1xgtQYUkq69B+BAsp9/kWRUkcWxi9c5bX+E52dBFRbPnX5nLZA4wAt2XLg0WwxYg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Asus\\Desktop\\Coding-Dojo\\Projects & Algorithms\\HealthCareCost\\HealthCareCost.csproj",
+  "projectFilePath": "C:\\Users\\Asus\\Desktop\\Coding-Dojo\\Projects & Algorithms\\SoloProject\\HealthCareCost\\HealthCareCost.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Asus\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\Asus\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.0\\microsoft.bcl.hashcode.1.1.0.nupkg.sha512",

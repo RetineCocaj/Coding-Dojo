@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Asus\\Desktop\\Coding-Dojo\\Projects & Algorithms\\HealthCareCost\\HealthCareCost.csproj": {}
+    "C:\\Users\\Asus\\Desktop\\Coding-Dojo\\Projects & Algorithms\\SoloProject\\HealthCareCost\\HealthCareCost.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Asus\\Desktop\\Coding-Dojo\\Projects & Algorithms\\HealthCareCost\\HealthCareCost.csproj": {
+    "C:\\Users\\Asus\\Desktop\\Coding-Dojo\\Projects & Algorithms\\SoloProject\\HealthCareCost\\HealthCareCost.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Asus\\Desktop\\Coding-Dojo\\Projects & Algorithms\\HealthCareCost\\HealthCareCost.csproj",
+        "projectUniqueName": "C:\\Users\\Asus\\Desktop\\Coding-Dojo\\Projects & Algorithms\\SoloProject\\HealthCareCost\\HealthCareCost.csproj",
         "projectName": "HealthCareCost",
-        "projectPath": "C:\\Users\\Asus\\Desktop\\Coding-Dojo\\Projects & Algorithms\\HealthCareCost\\HealthCareCost.csproj",
+        "projectPath": "C:\\Users\\Asus\\Desktop\\Coding-Dojo\\Projects & Algorithms\\SoloProject\\HealthCareCost\\HealthCareCost.csproj",
         "packagesPath": "C:\\Users\\Asus\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Asus\\Desktop\\Coding-Dojo\\Projects & Algorithms\\HealthCareCost\\obj\\",
+        "outputPath": "C:\\Users\\Asus\\Desktop\\Coding-Dojo\\Projects & Algorithms\\SoloProject\\HealthCareCost\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Asus\\AppData\\Roaming\\NuGet\\NuGet.Config",
